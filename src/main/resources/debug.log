@@ -1,0 +1,737 @@
+2026-02-24 10:11:33  [ main:0 ] - [ DEBUG ]  This is debug message.
+2026-02-24 10:11:33  [ main:4 ] - [ INFO ]  This is info message.
+2026-02-24 10:11:33  [ main:5 ] - [ ERROR ]  This is error message.
+2026-02-24 10:20:59  [ main:0 ] - [ DEBUG ]  Dig to clean the java.lang.Integer
+2026-02-24 10:20:59  [ main:2 ] - [ DEBUG ]  Dig to clean the java.lang.Integer
+2026-02-24 10:20:59  [ main:4 ] - [ DEBUG ]  Dig to clean the java.lang.Integer
+2026-02-24 10:20:59  [ main:4 ] - [ DEBUG ]  Dig to clean the java.lang.Boolean
+2026-02-24 10:20:59  [ main:54 ] - [ DEBUG ]  Dig to clean the org.apache.flink.api.common.functions.util.PrintSinkOutputWriter
+2026-02-24 10:20:59  [ main:55 ] - [ DEBUG ]  Dig to clean the java.lang.Boolean
+2026-02-24 10:20:59  [ main:55 ] - [ DEBUG ]  Dig to clean the java.lang.String
+2026-02-24 10:20:59  [ main:55 ] - [ DEBUG ]  Dig to clean the [C
+2026-02-24 10:20:59  [ main:64 ] - [ DEBUG ]  Dig to clean the java.lang.Integer
+2026-02-24 10:20:59  [ main:78 ] - [ DEBUG ]  Dig to clean the java.lang.Integer
+2026-02-24 10:20:59  [ main:78 ] - [ DEBUG ]  Dig to clean the java.lang.Integer
+2026-02-24 10:20:59  [ main:79 ] - [ DEBUG ]  Dig to clean the java.lang.Integer
+2026-02-24 10:20:59  [ main:79 ] - [ DEBUG ]  Dig to clean the java.lang.Boolean
+2026-02-24 10:20:59  [ main:79 ] - [ DEBUG ]  Dig to clean the org.apache.flink.api.common.functions.util.PrintSinkOutputWriter
+2026-02-24 10:20:59  [ main:79 ] - [ DEBUG ]  Dig to clean the java.lang.Boolean
+2026-02-24 10:20:59  [ main:79 ] - [ DEBUG ]  Dig to clean the java.lang.String
+2026-02-24 10:20:59  [ main:80 ] - [ DEBUG ]  Dig to clean the [C
+2026-02-24 10:20:59  [ main:81 ] - [ DEBUG ]  Dig to clean the java.lang.Integer
+2026-02-24 10:20:59  [ main:111 ] - [ DEBUG ]  Transforming LegacySinkTransformation{id=2, name='Print to Std. Out', outputType=GenericType<java.lang.Object>, parallelism=1}
+2026-02-24 10:20:59  [ main:111 ] - [ DEBUG ]  Transforming LegacySourceTransformation{id=1, name='Collection Source', outputType=Integer, parallelism=1}
+2026-02-24 10:20:59  [ main:119 ] - [ DEBUG ]  Vertex: 1
+2026-02-24 10:20:59  [ main:146 ] - [ DEBUG ]  Vertex: 2
+2026-02-24 10:20:59  [ main:148 ] - [ DEBUG ]  Transforming LegacySinkTransformation{id=4, name='Print to Std. Out', outputType=GenericType<java.lang.Object>, parallelism=1}
+2026-02-24 10:20:59  [ main:152 ] - [ DEBUG ]  Transforming LegacySourceTransformation{id=3, name='Collection Source', outputType=PojoType<com.xj.flink.source.Event, fields = [timestamp: Long, url: String, user: String]>, parallelism=1}
+2026-02-24 10:20:59  [ main:156 ] - [ DEBUG ]  Vertex: 3
+2026-02-24 10:20:59  [ main:156 ] - [ DEBUG ]  Vertex: 4
+2026-02-24 10:20:59  [ main:222 ] - [ DEBUG ]  Generated hash 'cbc357ccb763df2852fee8c4fc7d55f2' for node 'Source: Collection Source-1' {id: 1, parallelism: 1, user function: org.apache.flink.streaming.api.functions.source.FromElementsFunction}
+2026-02-24 10:20:59  [ main:223 ] - [ DEBUG ]  Generated hash '6cdc5bb954874d922eaee11a8e7b5dd5' for node 'Source: Collection Source-3' {id: 3, parallelism: 1, user function: org.apache.flink.streaming.api.functions.source.FromElementsFunction}
+2026-02-24 10:20:59  [ main:224 ] - [ DEBUG ]  Generated hash '2be4fe38b4ce63aa5bffc06b65e24e03' for node 'Sink: Print to Std. Out-2' {id: 2, parallelism: 1, user function: org.apache.flink.streaming.api.functions.sink.PrintSinkFunction}
+2026-02-24 10:20:59  [ main:225 ] - [ DEBUG ]  Generated hash 'eb99017e0f9125fa6648bf56123bdcf7' for node 'Sink: Print to Std. Out-4' {id: 4, parallelism: 1, user function: org.apache.flink.streaming.api.functions.sink.PrintSinkFunction}
+2026-02-24 10:20:59  [ main:275 ] - [ DEBUG ]  Parallelism set: 1 for 1
+2026-02-24 10:20:59  [ main:296 ] - [ DEBUG ]  Parallelism set: 1 for 3
+2026-02-24 10:21:00  [ main:359 ] - [ INFO ]  The configuration option taskmanager.cpu.cores required for local execution is not set, setting it to the maximal possible value.
+2026-02-24 10:21:00  [ main:359 ] - [ INFO ]  The configuration option taskmanager.memory.task.heap.size required for local execution is not set, setting it to the maximal possible value.
+2026-02-24 10:21:00  [ main:360 ] - [ INFO ]  The configuration option taskmanager.memory.task.off-heap.size required for local execution is not set, setting it to the maximal possible value.
+2026-02-24 10:21:00  [ main:363 ] - [ INFO ]  The configuration option taskmanager.memory.network.min required for local execution is not set, setting it to its default value 64 mb.
+2026-02-24 10:21:00  [ main:363 ] - [ INFO ]  The configuration option taskmanager.memory.network.max required for local execution is not set, setting it to its default value 64 mb.
+2026-02-24 10:21:00  [ main:364 ] - [ INFO ]  The configuration option taskmanager.memory.managed.size required for local execution is not set, setting it to its default value 128 mb.
+2026-02-24 10:21:00  [ main:405 ] - [ INFO ]  Starting Flink Mini Cluster
+2026-02-24 10:21:00  [ main:405 ] - [ DEBUG ]  Using configuration MiniClusterConfiguration {singleRpcService=SHARED, numTaskManagers=1, commonBindAddress='null', config={taskmanager.memory.network.min=64 mb, taskmanager.cpu.cores=1000000.0, taskmanager.memory.task.off-heap.size=1099511627776 bytes, execution.target=local, rest.bind-port=0, taskmanager.memory.network.max=64 mb, execution.attached=true, taskmanager.memory.managed.size=128 mb, parallelism.default=12, taskmanager.numberOfTaskSlots=1, taskmanager.memory.task.heap.size=1099511627776 bytes, rest.address=localhost}}
+2026-02-24 10:21:00  [ main:409 ] - [ INFO ]  Starting Metrics Registry
+2026-02-24 10:21:00  [ main:495 ] - [ INFO ]  No metrics reporter configured, no metrics will be exposed/reported.
+2026-02-24 10:21:00  [ main:495 ] - [ INFO ]  Starting RPC Service(s)
+2026-02-24 10:21:00  [ main:1021 ] - [ INFO ]  Trying to start local actor system
+2026-02-24 10:21:00  [ main:1027 ] - [ DEBUG ]  Using akka configuration
+ Config(SimpleConfigObject({"akka":{"actor":{"default-dispatcher":{"executor":"fork-join-executor","fork-join-executor":{"parallelism-factor":1,"parallelism-max":4,"parallelism-min":2},"throughput":15},"guardian-supervisor-strategy":"org.apache.flink.runtime.akka.EscalatingSupervisorStrategy","supervisor-dispatcher":{"executor":"thread-pool-executor","thread-pool-executor":{"core-pool-size-max":1,"core-pool-size-min":1},"type":"Dispatcher"},"warn-about-java-serializer-usage":"off"},"daemonic":"off","jvm-exit-on-fatal-error":"on","log-config-on-start":"off","log-dead-letters":"off","log-dead-letters-during-shutdown":"off","logger-startup-timeout":"30s","loggers":["akka.event.slf4j.Slf4jLogger"],"logging-filter":"akka.event.slf4j.Slf4jLoggingFilter","loglevel":"DEBUG","serialize-messages":"off","stdout-loglevel":"OFF"}}))
+2026-02-24 10:21:01  [ flink-akka.actor.default-dispatcher-3:1607 ] - [ INFO ]  Slf4jLogger started
+2026-02-24 10:21:01  [ flink-akka.actor.default-dispatcher-3:1619 ] - [ DEBUG ]  logger log1-Slf4jLogger started
+2026-02-24 10:21:01  [ flink-akka.actor.default-dispatcher-3:1621 ] - [ DEBUG ]  Default Loggers started
+2026-02-24 10:21:01  [ main:1758 ] - [ INFO ]  Actor system started at akka://flink
+2026-02-24 10:21:01  [ main:1772 ] - [ INFO ]  Trying to start local actor system
+2026-02-24 10:21:01  [ main:1773 ] - [ DEBUG ]  Using akka configuration
+ Config(SimpleConfigObject({"akka":{"actor":{"default-dispatcher":{"executor":"thread-pool-executor","thread-pool-executor":{"core-pool-size-max":1,"core-pool-size-min":1},"thread-priority":1,"throughput":15,"type":"akka.dispatch.PriorityThreadsDispatcher"},"guardian-supervisor-strategy":"org.apache.flink.runtime.akka.EscalatingSupervisorStrategy","supervisor-dispatcher":{"executor":"thread-pool-executor","thread-pool-executor":{"core-pool-size-max":1,"core-pool-size-min":1},"type":"Dispatcher"},"warn-about-java-serializer-usage":"off"},"daemonic":"off","jvm-exit-on-fatal-error":"on","log-config-on-start":"off","log-dead-letters":"off","log-dead-letters-during-shutdown":"off","logger-startup-timeout":"30s","loggers":["akka.event.slf4j.Slf4jLogger"],"logging-filter":"akka.event.slf4j.Slf4jLoggingFilter","loglevel":"DEBUG","serialize-messages":"off","stdout-loglevel":"OFF"}}))
+2026-02-24 10:21:01  [ flink-metrics-2:1784 ] - [ INFO ]  Slf4jLogger started
+2026-02-24 10:21:01  [ flink-metrics-2:1786 ] - [ DEBUG ]  logger log1-Slf4jLogger started
+2026-02-24 10:21:01  [ flink-metrics-2:1787 ] - [ DEBUG ]  Default Loggers started
+2026-02-24 10:21:01  [ main:1800 ] - [ INFO ]  Actor system started at akka://flink-metrics
+2026-02-24 10:21:01  [ flink-metrics-akka.actor.supervisor-dispatcher-3:1812 ] - [ DEBUG ]  Starting AkkaRpcActor with name MetricQueryService.
+2026-02-24 10:21:01  [ main:1815 ] - [ INFO ]  Starting RPC endpoint for org.apache.flink.runtime.metrics.dump.MetricQueryService at akka://flink-metrics/user/rpc/MetricQueryService .
+2026-02-24 10:21:01  [ main:1912 ] - [ INFO ]  Starting high-availability services
+2026-02-24 10:21:01  [ main:1933 ] - [ INFO ]  Created BLOB server storage directory /var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T/blobStore-37d86c5a-d618-422b-8248-7b8867728bc0
+2026-02-24 10:21:01  [ main:1941 ] - [ DEBUG ]  Trying to open socket on port 0
+2026-02-24 10:21:01  [ main:1942 ] - [ INFO ]  Started BLOB server at 0.0.0.0:53872 - max concurrent requests: 50 - max backlog: 1000
+2026-02-24 10:21:01  [ main:1952 ] - [ INFO ]  Created BLOB cache storage directory /var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T/blobStore-b0e57cf1-5f77-4e6a-a837-51eed59304cc
+2026-02-24 10:21:01  [ main:1954 ] - [ INFO ]  Created BLOB cache storage directory /var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T/blobStore-c7ea0315-57ca-425b-a458-9ee2fa5893bb
+2026-02-24 10:21:01  [ main:1954 ] - [ INFO ]  Starting 1 TaskManger(s)
+2026-02-24 10:21:01  [ main:1959 ] - [ INFO ]  Starting TaskManager with ResourceID: 479d4fbe-dd5f-4d12-ab9d-c27734122cce
+2026-02-24 10:21:01  [ main:1993 ] - [ INFO ]  Temporary file directory '/var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T': total 465 GB, usable 73 GB (15.70% usable)
+2026-02-24 10:21:01  [ main:1997 ] - [ INFO ]  FileChannelManager uses directory /var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T/flink-io-eeb258f1-eec0-4979-90c3-e6344903a731 for spill files.
+2026-02-24 10:21:01  [ main:2006 ] - [ INFO ]  FileChannelManager uses directory /var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T/flink-netty-shuffle-971a93a3-b72d-448d-b5f4-f5dade204058 for spill files.
+2026-02-24 10:21:01  [ main:2077 ] - [ INFO ]  Allocated 64 MB for network buffer pool (number of memory segments: 2048, bytes per segment: 32768).
+2026-02-24 10:21:01  [ main:2096 ] - [ INFO ]  Starting the network environment and its components.
+2026-02-24 10:21:01  [ main:2096 ] - [ DEBUG ]  Starting network connection manager
+2026-02-24 10:21:01  [ main:2099 ] - [ INFO ]  Starting the kvState service and its components.
+2026-02-24 10:21:01  [ main:2118 ] - [ DEBUG ]  Messages have a max timeout of 10000 ms
+2026-02-24 10:21:01  [ flink-akka.actor.supervisor-dispatcher-5:2135 ] - [ DEBUG ]  Starting AkkaRpcActor with name taskmanager_0.
+2026-02-24 10:21:01  [ main:2136 ] - [ INFO ]  Starting RPC endpoint for org.apache.flink.runtime.taskexecutor.TaskExecutor at akka://flink/user/rpc/taskmanager_0 .
+2026-02-24 10:21:01  [ flink-akka.actor.default-dispatcher-3:2152 ] - [ INFO ]  Start job leader service.
+2026-02-24 10:21:01  [ flink-akka.actor.default-dispatcher-3:2154 ] - [ INFO ]  User file cache uses directory /var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T/flink-dist-cache-f4d9e411-33a4-43a8-b289-f75c69627606
+2026-02-24 10:21:01  [ main:2236 ] - [ DEBUG ]  Starting Dispatcher REST endpoint.
+2026-02-24 10:21:01  [ main:2236 ] - [ INFO ]  Starting rest endpoint.
+2026-02-24 10:21:02  [ main:2504 ] - [ DEBUG ]  Using SLF4J as the default logging framework
+2026-02-24 10:21:02  [ main:2505 ] - [ DEBUG ]  -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2026-02-24 10:21:02  [ main:2506 ] - [ DEBUG ]  -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2026-02-24 10:21:02  [ main:2607 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2026-02-24 10:21:02  [ main:2608 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2026-02-24 10:21:02  [ main:2635 ] - [ DEBUG ]  Platform: MacOS
+2026-02-24 10:21:02  [ main:2637 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
+2026-02-24 10:21:02  [ main:2637 ] - [ DEBUG ]  Java version: 8
+2026-02-24 10:21:02  [ main:2638 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
+2026-02-24 10:21:02  [ main:2638 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
+2026-02-24 10:21:02  [ main:2638 ] - [ DEBUG ]  java.nio.Buffer.address: available
+2026-02-24 10:21:02  [ main:2639 ] - [ DEBUG ]  direct buffer constructor: available
+2026-02-24 10:21:02  [ main:2639 ] - [ DEBUG ]  java.nio.Bits.unaligned: available, true
+2026-02-24 10:21:02  [ main:2639 ] - [ DEBUG ]  jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2026-02-24 10:21:02  [ main:2640 ] - [ DEBUG ]  java.nio.DirectByteBuffer.<init>(long, int): available
+2026-02-24 10:21:02  [ main:2640 ] - [ DEBUG ]  sun.misc.Unsafe: available
+2026-02-24 10:21:02  [ main:2640 ] - [ DEBUG ]  -Dio.netty.tmpdir: /var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T (java.io.tmpdir)
+2026-02-24 10:21:02  [ main:2640 ] - [ DEBUG ]  -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2026-02-24 10:21:02  [ main:2641 ] - [ DEBUG ]  -Dio.netty.maxDirectMemory: 3817865216 bytes
+2026-02-24 10:21:02  [ main:2641 ] - [ DEBUG ]  -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2026-02-24 10:21:02  [ main:2642 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner(): available
+2026-02-24 10:21:02  [ main:2642 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
+2026-02-24 10:21:02  [ main:2646 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.ShutdownHandler@3005db4a under DELETE@/v1/cluster.
+2026-02-24 10:21:02  [ main:2647 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.ShutdownHandler@3005db4a under DELETE@/cluster.
+2026-02-24 10:21:02  [ main:2648 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.DashboardConfigHandler@3a022576 under GET@/v1/config.
+2026-02-24 10:21:02  [ main:2649 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.DashboardConfigHandler@3a022576 under GET@/config.
+2026-02-24 10:21:02  [ main:2650 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.dataset.ClusterDataSetListHandler@2dbd803f under GET@/v1/datasets.
+2026-02-24 10:21:02  [ main:2650 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.dataset.ClusterDataSetListHandler@2dbd803f under GET@/datasets.
+2026-02-24 10:21:02  [ main:2651 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.dataset.ClusterDataSetDeleteHandlers$ClusterDataSetDeleteStatusHandler@3e48e859 under GET@/v1/datasets/delete/:triggerid.
+2026-02-24 10:21:02  [ main:2651 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.dataset.ClusterDataSetDeleteHandlers$ClusterDataSetDeleteStatusHandler@3e48e859 under GET@/datasets/delete/:triggerid.
+2026-02-24 10:21:02  [ main:2651 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.dataset.ClusterDataSetDeleteHandlers$ClusterDataSetDeleteTriggerHandler@31ddd4a4 under DELETE@/v1/datasets/:datasetid.
+2026-02-24 10:21:02  [ main:2651 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.dataset.ClusterDataSetDeleteHandlers$ClusterDataSetDeleteTriggerHandler@31ddd4a4 under DELETE@/datasets/:datasetid.
+2026-02-24 10:21:02  [ main:2651 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.webmonitor.handlers.JarListHandler@1a5f7e7c under GET@/v1/jars.
+2026-02-24 10:21:02  [ main:2651 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.webmonitor.handlers.JarListHandler@1a5f7e7c under GET@/jars.
+2026-02-24 10:21:02  [ main:2652 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.webmonitor.handlers.JarUploadHandler@5b22b970 under POST@/v1/jars/upload.
+2026-02-24 10:21:02  [ main:2652 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.webmonitor.handlers.JarUploadHandler@5b22b970 under POST@/jars/upload.
+2026-02-24 10:21:02  [ main:2652 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.webmonitor.handlers.JarDeleteHandler@22d1886d under DELETE@/v1/jars/:jarid.
+2026-02-24 10:21:02  [ main:2652 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.webmonitor.handlers.JarDeleteHandler@22d1886d under DELETE@/jars/:jarid.
+2026-02-24 10:21:02  [ main:2652 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.webmonitor.handlers.JarPlanHandler@7df60067 under GET@/v1/jars/:jarid/plan.
+2026-02-24 10:21:02  [ main:2652 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.webmonitor.handlers.JarPlanHandler@7df60067 under GET@/jars/:jarid/plan.
+2026-02-24 10:21:02  [ main:2652 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.webmonitor.handlers.JarPlanHandler@1cbb3d3b under POST@/v1/jars/:jarid/plan.
+2026-02-24 10:21:02  [ main:2652 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.webmonitor.handlers.JarPlanHandler@1cbb3d3b under POST@/jars/:jarid/plan.
+2026-02-24 10:21:02  [ main:2653 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.webmonitor.handlers.JarRunHandler@529cfee5 under POST@/v1/jars/:jarid/run.
+2026-02-24 10:21:02  [ main:2653 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.webmonitor.handlers.JarRunHandler@529cfee5 under POST@/jars/:jarid/run.
+2026-02-24 10:21:02  [ main:2653 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.ClusterConfigHandler@7ca0863b under GET@/v1/jobmanager/config.
+2026-02-24 10:21:02  [ main:2653 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.ClusterConfigHandler@7ca0863b under GET@/jobmanager/config.
+2026-02-24 10:21:02  [ main:2653 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.JobManagerLogFileHandler@319854f0 under GET@/v1/jobmanager/log.
+2026-02-24 10:21:02  [ main:2653 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.JobManagerLogFileHandler@319854f0 under GET@/jobmanager/log.
+2026-02-24 10:21:02  [ main:2653 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.JobManagerLogListHandler@748fe51d under GET@/v1/jobmanager/logs.
+2026-02-24 10:21:02  [ main:2653 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.JobManagerLogListHandler@748fe51d under GET@/jobmanager/logs.
+2026-02-24 10:21:02  [ main:2653 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.JobManagerCustomLogHandler@415156bf under GET@/v1/jobmanager/logs/:filename.
+2026-02-24 10:21:02  [ main:2654 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.JobManagerCustomLogHandler@415156bf under GET@/jobmanager/logs/:filename.
+2026-02-24 10:21:02  [ main:2654 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.JobManagerMetricsHandler@393881f0 under GET@/v1/jobmanager/metrics.
+2026-02-24 10:21:02  [ main:2654 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.JobManagerMetricsHandler@393881f0 under GET@/jobmanager/metrics.
+2026-02-24 10:21:02  [ main:2654 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.JobManagerLogFileHandler@4af46df3 under GET@/v1/jobmanager/stdout.
+2026-02-24 10:21:02  [ main:2654 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.JobManagerLogFileHandler@4af46df3 under GET@/jobmanager/stdout.
+2026-02-24 10:21:02  [ main:2654 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobIdsHandler@4158debd under GET@/v1/jobs.
+2026-02-24 10:21:02  [ main:2654 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobIdsHandler@4158debd under GET@/jobs.
+2026-02-24 10:21:02  [ main:2654 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobSubmitHandler@af78c87 under POST@/v1/jobs.
+2026-02-24 10:21:02  [ main:2654 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobSubmitHandler@af78c87 under POST@/jobs.
+2026-02-24 10:21:02  [ main:2654 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.AggregatingJobsMetricsHandler@773dab28 under GET@/v1/jobs/metrics.
+2026-02-24 10:21:02  [ main:2655 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.AggregatingJobsMetricsHandler@773dab28 under GET@/jobs/metrics.
+2026-02-24 10:21:02  [ main:2655 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobsOverviewHandler@1ecfcbc9 under GET@/v1/jobs/overview.
+2026-02-24 10:21:02  [ main:2655 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobsOverviewHandler@1ecfcbc9 under GET@/jobs/overview.
+2026-02-24 10:21:02  [ main:2655 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobDetailsHandler@1965539b under GET@/v1/jobs/:jobid.
+2026-02-24 10:21:02  [ main:2655 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobDetailsHandler@1965539b under GET@/jobs/:jobid.
+2026-02-24 10:21:02  [ main:2655 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobCancellationHandler@2fc07784 under PATCH@/v1/jobs/:jobid.
+2026-02-24 10:21:02  [ main:2655 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobCancellationHandler@2fc07784 under PATCH@/jobs/:jobid.
+2026-02-24 10:21:02  [ main:2656 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobAccumulatorsHandler@353efdbf under GET@/v1/jobs/:jobid/accumulators.
+2026-02-24 10:21:02  [ main:2656 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobAccumulatorsHandler@353efdbf under GET@/jobs/:jobid/accumulators.
+2026-02-24 10:21:02  [ main:2656 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.checkpoints.CheckpointingStatisticsHandler@55cff952 under GET@/v1/jobs/:jobid/checkpoints.
+2026-02-24 10:21:02  [ main:2656 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.checkpoints.CheckpointingStatisticsHandler@55cff952 under GET@/jobs/:jobid/checkpoints.
+2026-02-24 10:21:02  [ main:2656 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.checkpoints.CheckpointConfigHandler@660591fb under GET@/v1/jobs/:jobid/checkpoints/config.
+2026-02-24 10:21:02  [ main:2657 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.checkpoints.CheckpointConfigHandler@660591fb under GET@/jobs/:jobid/checkpoints/config.
+2026-02-24 10:21:02  [ main:2657 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.checkpoints.CheckpointStatisticDetailsHandler@4a55a6e8 under GET@/v1/jobs/:jobid/checkpoints/details/:checkpointid.
+2026-02-24 10:21:02  [ main:2657 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.checkpoints.CheckpointStatisticDetailsHandler@4a55a6e8 under GET@/jobs/:jobid/checkpoints/details/:checkpointid.
+2026-02-24 10:21:02  [ main:2657 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.checkpoints.TaskCheckpointStatisticDetailsHandler@8c46918 under GET@/v1/jobs/:jobid/checkpoints/details/:checkpointid/subtasks/:vertexid.
+2026-02-24 10:21:02  [ main:2657 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.checkpoints.TaskCheckpointStatisticDetailsHandler@8c46918 under GET@/jobs/:jobid/checkpoints/details/:checkpointid/subtasks/:vertexid.
+2026-02-24 10:21:02  [ main:2657 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobConfigHandler@226b143b under GET@/v1/jobs/:jobid/config.
+2026-02-24 10:21:02  [ main:2657 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobConfigHandler@226b143b under GET@/jobs/:jobid/config.
+2026-02-24 10:21:02  [ main:2658 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.coordination.ClientCoordinationHandler@682bd3c4 under POST@/v1/jobs/:jobid/coordinators/:operatorid.
+2026-02-24 10:21:02  [ main:2658 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.coordination.ClientCoordinationHandler@682bd3c4 under POST@/jobs/:jobid/coordinators/:operatorid.
+2026-02-24 10:21:02  [ main:2658 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobExceptionsHandler@f2e4acf under GET@/v1/jobs/:jobid/exceptions.
+2026-02-24 10:21:02  [ main:2658 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobExceptionsHandler@f2e4acf under GET@/jobs/:jobid/exceptions.
+2026-02-24 10:21:02  [ main:2658 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobExecutionResultHandler@24097e9b under GET@/v1/jobs/:jobid/execution-result.
+2026-02-24 10:21:02  [ main:2658 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobExecutionResultHandler@24097e9b under GET@/jobs/:jobid/execution-result.
+2026-02-24 10:21:02  [ main:2658 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.JobMetricsHandler@5eb97ced under GET@/v1/jobs/:jobid/metrics.
+2026-02-24 10:21:02  [ main:2659 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.JobMetricsHandler@5eb97ced under GET@/jobs/:jobid/metrics.
+2026-02-24 10:21:02  [ main:2659 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobPlanHandler@68ba310d under GET@/v1/jobs/:jobid/plan.
+2026-02-24 10:21:02  [ main:2659 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobPlanHandler@68ba310d under GET@/jobs/:jobid/plan.
+2026-02-24 10:21:02  [ main:2659 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.rescaling.RescalingHandlers$RescalingTriggerHandler@153f66e7 under PATCH@/v1/jobs/:jobid/rescaling.
+2026-02-24 10:21:02  [ main:2659 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.rescaling.RescalingHandlers$RescalingTriggerHandler@153f66e7 under PATCH@/jobs/:jobid/rescaling.
+2026-02-24 10:21:02  [ main:2659 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.rescaling.RescalingHandlers$RescalingStatusHandler@7aad3f7d under GET@/v1/jobs/:jobid/rescaling/:triggerid.
+2026-02-24 10:21:02  [ main:2659 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.rescaling.RescalingHandlers$RescalingStatusHandler@7aad3f7d under GET@/jobs/:jobid/rescaling/:triggerid.
+2026-02-24 10:21:02  [ main:2659 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.savepoints.SavepointHandlers$SavepointTriggerHandler@6f667ad1 under POST@/v1/jobs/:jobid/savepoints.
+2026-02-24 10:21:02  [ main:2660 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.savepoints.SavepointHandlers$SavepointTriggerHandler@6f667ad1 under POST@/jobs/:jobid/savepoints.
+2026-02-24 10:21:02  [ main:2660 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.savepoints.SavepointHandlers$SavepointStatusHandler@566d0c69 under GET@/v1/jobs/:jobid/savepoints/:triggerid.
+2026-02-24 10:21:02  [ main:2660 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.savepoints.SavepointHandlers$SavepointStatusHandler@566d0c69 under GET@/jobs/:jobid/savepoints/:triggerid.
+2026-02-24 10:21:02  [ main:2660 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.savepoints.SavepointHandlers$StopWithSavepointHandler@388b401d under POST@/v1/jobs/:jobid/stop.
+2026-02-24 10:21:02  [ main:2660 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.savepoints.SavepointHandlers$StopWithSavepointHandler@388b401d under POST@/jobs/:jobid/stop.
+2026-02-24 10:21:02  [ main:2660 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobVertexDetailsHandler@2bcec6a6 under GET@/v1/jobs/:jobid/vertices/:vertexid.
+2026-02-24 10:21:02  [ main:2660 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobVertexDetailsHandler@2bcec6a6 under GET@/jobs/:jobid/vertices/:vertexid.
+2026-02-24 10:21:02  [ main:2660 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobVertexAccumulatorsHandler@77a281fc under GET@/v1/jobs/:jobid/vertices/:vertexid/accumulators.
+2026-02-24 10:21:02  [ main:2661 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobVertexAccumulatorsHandler@77a281fc under GET@/jobs/:jobid/vertices/:vertexid/accumulators.
+2026-02-24 10:21:02  [ main:2661 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobVertexBackPressureHandler@4912d525 under GET@/v1/jobs/:jobid/vertices/:vertexid/backpressure.
+2026-02-24 10:21:02  [ main:2661 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobVertexBackPressureHandler@4912d525 under GET@/jobs/:jobid/vertices/:vertexid/backpressure.
+2026-02-24 10:21:02  [ main:2661 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.JobVertexMetricsHandler@2bfbffb2 under GET@/v1/jobs/:jobid/vertices/:vertexid/metrics.
+2026-02-24 10:21:02  [ main:2661 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.JobVertexMetricsHandler@2bfbffb2 under GET@/jobs/:jobid/vertices/:vertexid/metrics.
+2026-02-24 10:21:02  [ main:2661 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.SubtasksAllAccumulatorsHandler@765df79d under GET@/v1/jobs/:jobid/vertices/:vertexid/subtasks/accumulators.
+2026-02-24 10:21:02  [ main:2662 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.SubtasksAllAccumulatorsHandler@765df79d under GET@/jobs/:jobid/vertices/:vertexid/subtasks/accumulators.
+2026-02-24 10:21:02  [ main:2662 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.AggregatingSubtasksMetricsHandler@151335cb under GET@/v1/jobs/:jobid/vertices/:vertexid/subtasks/metrics.
+2026-02-24 10:21:02  [ main:2662 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.AggregatingSubtasksMetricsHandler@151335cb under GET@/jobs/:jobid/vertices/:vertexid/subtasks/metrics.
+2026-02-24 10:21:02  [ main:2662 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.SubtaskCurrentAttemptDetailsHandler@4a7761b1 under GET@/v1/jobs/:jobid/vertices/:vertexid/subtasks/:subtaskindex.
+2026-02-24 10:21:02  [ main:2662 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.SubtaskCurrentAttemptDetailsHandler@4a7761b1 under GET@/jobs/:jobid/vertices/:vertexid/subtasks/:subtaskindex.
+2026-02-24 10:21:02  [ main:2662 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.SubtaskExecutionAttemptDetailsHandler@3e850122 under GET@/v1/jobs/:jobid/vertices/:vertexid/subtasks/:subtaskindex/attempts/:attempt.
+2026-02-24 10:21:02  [ main:2662 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.SubtaskExecutionAttemptDetailsHandler@3e850122 under GET@/jobs/:jobid/vertices/:vertexid/subtasks/:subtaskindex/attempts/:attempt.
+2026-02-24 10:21:02  [ main:2662 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.SubtaskExecutionAttemptAccumulatorsHandler@27fde870 under GET@/v1/jobs/:jobid/vertices/:vertexid/subtasks/:subtaskindex/attempts/:attempt/accumulators.
+2026-02-24 10:21:02  [ main:2663 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.SubtaskExecutionAttemptAccumulatorsHandler@27fde870 under GET@/jobs/:jobid/vertices/:vertexid/subtasks/:subtaskindex/attempts/:attempt/accumulators.
+2026-02-24 10:21:02  [ main:2663 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.SubtaskMetricsHandler@2b4c3c29 under GET@/v1/jobs/:jobid/vertices/:vertexid/subtasks/:subtaskindex/metrics.
+2026-02-24 10:21:02  [ main:2663 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.SubtaskMetricsHandler@2b4c3c29 under GET@/jobs/:jobid/vertices/:vertexid/subtasks/:subtaskindex/metrics.
+2026-02-24 10:21:02  [ main:2663 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.SubtasksTimesHandler@5ac7aa18 under GET@/v1/jobs/:jobid/vertices/:vertexid/subtasktimes.
+2026-02-24 10:21:02  [ main:2663 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.SubtasksTimesHandler@5ac7aa18 under GET@/jobs/:jobid/vertices/:vertexid/subtasktimes.
+2026-02-24 10:21:02  [ main:2663 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobVertexTaskManagersHandler@4cdd2c73 under GET@/v1/jobs/:jobid/vertices/:vertexid/taskmanagers.
+2026-02-24 10:21:02  [ main:2664 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobVertexTaskManagersHandler@4cdd2c73 under GET@/jobs/:jobid/vertices/:vertexid/taskmanagers.
+2026-02-24 10:21:02  [ main:2664 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.JobVertexWatermarksHandler@4abf3f0 under GET@/v1/jobs/:jobid/vertices/:vertexid/watermarks.
+2026-02-24 10:21:02  [ main:2664 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.JobVertexWatermarksHandler@4abf3f0 under GET@/jobs/:jobid/vertices/:vertexid/watermarks.
+2026-02-24 10:21:02  [ main:2664 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobCancellationHandler@4e4c3a38 under GET@/v1/jobs/:jobid/yarn-cancel.
+2026-02-24 10:21:02  [ main:2664 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobCancellationHandler@4e4c3a38 under GET@/jobs/:jobid/yarn-cancel.
+2026-02-24 10:21:02  [ main:2664 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobCancellationHandler@293cde83 under GET@/v1/jobs/:jobid/yarn-stop.
+2026-02-24 10:21:02  [ main:2664 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.JobCancellationHandler@293cde83 under GET@/jobs/:jobid/yarn-stop.
+2026-02-24 10:21:02  [ main:2664 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.ClusterOverviewHandler@c27d163 under GET@/v1/overview.
+2026-02-24 10:21:02  [ main:2665 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.cluster.ClusterOverviewHandler@c27d163 under GET@/overview.
+2026-02-24 10:21:02  [ main:2665 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.savepoints.SavepointDisposalHandlers$SavepointDisposalTriggerHandler@57c88764 under POST@/v1/savepoint-disposal.
+2026-02-24 10:21:02  [ main:2665 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.savepoints.SavepointDisposalHandlers$SavepointDisposalTriggerHandler@57c88764 under POST@/savepoint-disposal.
+2026-02-24 10:21:02  [ main:2665 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.savepoints.SavepointDisposalHandlers$SavepointDisposalStatusHandler@78faea5f under GET@/v1/savepoint-disposal/:triggerid.
+2026-02-24 10:21:02  [ main:2665 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.savepoints.SavepointDisposalHandlers$SavepointDisposalStatusHandler@78faea5f under GET@/savepoint-disposal/:triggerid.
+2026-02-24 10:21:02  [ main:2665 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagersHandler@37fdfb05 under GET@/v1/taskmanagers.
+2026-02-24 10:21:02  [ main:2665 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagersHandler@37fdfb05 under GET@/taskmanagers.
+2026-02-24 10:21:02  [ main:2665 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.AggregatingTaskManagersMetricsHandler@5e39850 under GET@/v1/taskmanagers/metrics.
+2026-02-24 10:21:02  [ main:2665 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.AggregatingTaskManagersMetricsHandler@5e39850 under GET@/taskmanagers/metrics.
+2026-02-24 10:21:02  [ main:2665 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerDetailsHandler@1603dc2f under GET@/v1/taskmanagers/:taskmanagerid.
+2026-02-24 10:21:02  [ main:2666 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerDetailsHandler@1603dc2f under GET@/taskmanagers/:taskmanagerid.
+2026-02-24 10:21:02  [ main:2666 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerLogFileHandler@398474a2 under GET@/v1/taskmanagers/:taskmanagerid/log.
+2026-02-24 10:21:02  [ main:2666 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerLogFileHandler@398474a2 under GET@/taskmanagers/:taskmanagerid/log.
+2026-02-24 10:21:02  [ main:2666 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerLogListHandler@61799544 under GET@/v1/taskmanagers/:taskmanagerid/logs.
+2026-02-24 10:21:02  [ main:2666 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerLogListHandler@61799544 under GET@/taskmanagers/:taskmanagerid/logs.
+2026-02-24 10:21:02  [ main:2666 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerCustomLogHandler@78c1a023 under GET@/v1/taskmanagers/:taskmanagerid/logs/:filename.
+2026-02-24 10:21:02  [ main:2666 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerCustomLogHandler@78c1a023 under GET@/taskmanagers/:taskmanagerid/logs/:filename.
+2026-02-24 10:21:02  [ main:2666 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.TaskManagerMetricsHandler@70abf9b0 under GET@/v1/taskmanagers/:taskmanagerid/metrics.
+2026-02-24 10:21:02  [ main:2666 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.job.metrics.TaskManagerMetricsHandler@70abf9b0 under GET@/taskmanagers/:taskmanagerid/metrics.
+2026-02-24 10:21:02  [ main:2667 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerStdoutFileHandler@6a10b263 under GET@/v1/taskmanagers/:taskmanagerid/stdout.
+2026-02-24 10:21:02  [ main:2667 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerStdoutFileHandler@6a10b263 under GET@/taskmanagers/:taskmanagerid/stdout.
+2026-02-24 10:21:02  [ main:2667 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerThreadDumpHandler@476ec9d0 under GET@/v1/taskmanagers/:taskmanagerid/thread-dump.
+2026-02-24 10:21:02  [ main:2667 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerThreadDumpHandler@476ec9d0 under GET@/taskmanagers/:taskmanagerid/thread-dump.
+2026-02-24 10:21:02  [ main:2667 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.legacy.files.StaticFileServerHandler@325bb9a6 under GET@/v1/:*.
+2026-02-24 10:21:02  [ main:2667 ] - [ DEBUG ]  Register handler org.apache.flink.runtime.rest.handler.legacy.files.StaticFileServerHandler@325bb9a6 under GET@/:*.
+2026-02-24 10:21:02  [ main:2673 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 24
+2026-02-24 10:21:02  [ main:2695 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
+2026-02-24 10:21:02  [ main:2695 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
+2026-02-24 10:21:02  [ main:2701 ] - [ DEBUG ]  org.jctools-core.MpscChunkedArrayQueue: available
+2026-02-24 10:21:02  [ main:2741 ] - [ DEBUG ]  -Dio.netty.processId: 20670 (auto-detected)
+2026-02-24 10:21:02  [ main:2746 ] - [ DEBUG ]  -Djava.net.preferIPv4Stack: false
+2026-02-24 10:21:02  [ main:2746 ] - [ DEBUG ]  -Djava.net.preferIPv6Addresses: false
+2026-02-24 10:21:02  [ main:2750 ] - [ DEBUG ]  Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2026-02-24 10:21:02  [ main:2751 ] - [ DEBUG ]  Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2026-02-24 10:21:02  [ main:2755 ] - [ DEBUG ]  -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2026-02-24 10:21:02  [ main:2834 ] - [ DEBUG ]  -Dorg.apache.flink.shaded.netty4.io.netty.leakDetection.level: simple
+2026-02-24 10:21:02  [ main:2835 ] - [ DEBUG ]  -Dorg.apache.flink.shaded.netty4.io.netty.leakDetection.targetRecords: 4
+2026-02-24 10:21:02  [ main:2879 ] - [ DEBUG ]  -Dio.netty.allocator.numHeapArenas: 24
+2026-02-24 10:21:02  [ main:2879 ] - [ DEBUG ]  -Dio.netty.allocator.numDirectArenas: 24
+2026-02-24 10:21:02  [ main:2879 ] - [ DEBUG ]  -Dio.netty.allocator.pageSize: 8192
+2026-02-24 10:21:02  [ main:2879 ] - [ DEBUG ]  -Dio.netty.allocator.maxOrder: 11
+2026-02-24 10:21:02  [ main:2879 ] - [ DEBUG ]  -Dio.netty.allocator.chunkSize: 16777216
+2026-02-24 10:21:02  [ main:2880 ] - [ DEBUG ]  -Dio.netty.allocator.tinyCacheSize: 512
+2026-02-24 10:21:02  [ main:2880 ] - [ DEBUG ]  -Dio.netty.allocator.smallCacheSize: 256
+2026-02-24 10:21:02  [ main:2880 ] - [ DEBUG ]  -Dio.netty.allocator.normalCacheSize: 64
+2026-02-24 10:21:02  [ main:2880 ] - [ DEBUG ]  -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2026-02-24 10:21:02  [ main:2880 ] - [ DEBUG ]  -Dio.netty.allocator.cacheTrimInterval: 8192
+2026-02-24 10:21:02  [ main:2880 ] - [ DEBUG ]  -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2026-02-24 10:21:02  [ main:2881 ] - [ DEBUG ]  -Dio.netty.allocator.useCacheForAllThreads: true
+2026-02-24 10:21:02  [ main:2881 ] - [ DEBUG ]  -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2026-02-24 10:21:02  [ main:2899 ] - [ DEBUG ]  -Dio.netty.allocator.type: pooled
+2026-02-24 10:21:02  [ main:2900 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 0
+2026-02-24 10:21:02  [ main:2900 ] - [ DEBUG ]  -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2026-02-24 10:21:02  [ main:2918 ] - [ DEBUG ]  Binding rest endpoint to null:0.
+2026-02-24 10:21:02  [ main:2918 ] - [ INFO ]  Rest endpoint listening at localhost:53874
+2026-02-24 10:21:02  [ main:2919 ] - [ INFO ]  Proposing leadership to contender http://localhost:53874
+2026-02-24 10:21:02  [ main:2921 ] - [ INFO ]  Web frontend listening at http://localhost:53874.
+2026-02-24 10:21:02  [ mini-cluster-io-thread-1:2922 ] - [ INFO ]  http://localhost:53874 was granted leadership with leaderSessionID=5495afdc-2e49-4215-a372-4c963914180a
+2026-02-24 10:21:02  [ mini-cluster-io-thread-1:2922 ] - [ INFO ]  Received confirmation of leadership for leader http://localhost:53874 , session=5495afdc-2e49-4215-a372-4c963914180a
+2026-02-24 10:21:02  [ flink-akka.actor.supervisor-dispatcher-5:2945 ] - [ DEBUG ]  Starting FencedAkkaRpcActor with name resourcemanager_1.
+2026-02-24 10:21:02  [ main:2946 ] - [ INFO ]  Starting RPC endpoint for org.apache.flink.runtime.resourcemanager.StandaloneResourceManager at akka://flink/user/rpc/resourcemanager_1 .
+2026-02-24 10:21:02  [ main:2965 ] - [ DEBUG ]  Starting Dispatcher.
+2026-02-24 10:21:02  [ main:2971 ] - [ INFO ]  Proposing leadership to contender LeaderContender: DefaultDispatcherRunner
+2026-02-24 10:21:02  [ main:2972 ] - [ DEBUG ]  Starting ResourceManager.
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-3:2973 ] - [ INFO ]  Starting the resource manager.
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-3:2973 ] - [ INFO ]  Proposing leadership to contender LeaderContender: StandaloneResourceManager
+2026-02-24 10:21:02  [ mini-cluster-io-thread-2:2974 ] - [ DEBUG ]  Create new DispatcherLeaderProcess with leader session id 595d1c40-c502-4320-a5e4-1ce1a24a0fd3.
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-3:2979 ] - [ INFO ]  ResourceManager akka://flink/user/rpc/resourcemanager_1 was granted leadership with fencing token ac223ae3f8c824265bf2397bb7c3404d
+2026-02-24 10:21:02  [ main:2981 ] - [ INFO ]  Flink Mini Cluster started successfully
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-3:2984 ] - [ DEBUG ]  Starting the slot manager.
+2026-02-24 10:21:02  [ mini-cluster-io-thread-2:2984 ] - [ INFO ]  Start SessionDispatcherLeaderProcess.
+2026-02-24 10:21:02  [ mini-cluster-io-thread-5:2986 ] - [ INFO ]  Recover all persisted job graphs.
+2026-02-24 10:21:02  [ mini-cluster-io-thread-5:2987 ] - [ INFO ]  Successfully recovered 0 persisted job graphs.
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-3:2992 ] - [ DEBUG ]  Trigger heartbeat request.
+2026-02-24 10:21:02  [ mini-cluster-io-thread-6:2992 ] - [ INFO ]  Received confirmation of leadership for leader akka://flink/user/rpc/resourcemanager_1 , session=5bf2397b-b7c3-404d-ac22-3ae3f8c82426
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-3:2993 ] - [ DEBUG ]  Trigger heartbeat request.
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-2:2996 ] - [ INFO ]  Connecting to ResourceManager akka://flink/user/rpc/resourcemanager_1(ac223ae3f8c824265bf2397bb7c3404d).
+2026-02-24 10:21:02  [ mini-cluster-io-thread-9:2997 ] - [ DEBUG ]  Try to connect to remote RPC endpoint with address akka://flink/user/rpc/resourcemanager_1. Returning a org.apache.flink.runtime.resourcemanager.ResourceManagerGateway gateway.
+2026-02-24 10:21:02  [ mini-cluster-io-thread-8:2997 ] - [ DEBUG ]  Try to connect to remote RPC endpoint with address akka://flink/user/rpc/resourcemanager_1. Returning a org.apache.flink.runtime.resourcemanager.ResourceManagerGateway gateway.
+2026-02-24 10:21:02  [ flink-akka.actor.supervisor-dispatcher-5:3001 ] - [ DEBUG ]  Starting FencedAkkaRpcActor with name dispatcher_2.
+2026-02-24 10:21:02  [ mini-cluster-io-thread-5:3002 ] - [ INFO ]  Starting RPC endpoint for org.apache.flink.runtime.dispatcher.StandaloneDispatcher at akka://flink/user/rpc/dispatcher_2 .
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-2:3008 ] - [ DEBUG ]  Try to connect to remote RPC endpoint with address akka://flink/user/rpc/resourcemanager_1. Returning a org.apache.flink.runtime.resourcemanager.ResourceManagerGateway gateway.
+2026-02-24 10:21:02  [ mini-cluster-io-thread-5:3011 ] - [ INFO ]  Received confirmation of leadership for leader akka://flink/user/rpc/dispatcher_2 , session=595d1c40-c502-4320-a5e4-1ce1a24a0fd3
+2026-02-24 10:21:02  [ mini-cluster-io-thread-10:3012 ] - [ DEBUG ]  Try to connect to remote RPC endpoint with address akka://flink/user/rpc/dispatcher_2. Returning a org.apache.flink.runtime.dispatcher.DispatcherGateway gateway.
+2026-02-24 10:21:02  [ mini-cluster-io-thread-11:3012 ] - [ DEBUG ]  Try to connect to remote RPC endpoint with address akka://flink/user/rpc/dispatcher_2. Returning a org.apache.flink.runtime.dispatcher.DispatcherGateway gateway.
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-3:3033 ] - [ INFO ]  Resolved ResourceManager address, beginning registration
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-3:3033 ] - [ DEBUG ]  Registration at ResourceManager attempt 1 (timeout=100ms)
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-2:3037 ] - [ DEBUG ]  Try to connect to remote RPC endpoint with address akka://flink/user/rpc/taskmanager_0. Returning a org.apache.flink.runtime.taskexecutor.TaskExecutorGateway gateway.
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-4:3046 ] - [ INFO ]  Registering TaskManager with ResourceID 479d4fbe-dd5f-4d12-ab9d-c27734122cce (akka://flink/user/rpc/taskmanager_0) at ResourceManager
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-3:3050 ] - [ DEBUG ]  Registration with ResourceManager at akka://flink/user/rpc/resourcemanager_1 was successful.
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-4:3051 ] - [ INFO ]  Successful registration at resource manager akka://flink/user/rpc/resourcemanager_1 under registration id f76f80a6e328135ca10906a06aaf3225.
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-6:3053 ] - [ INFO ]  Received JobGraph submission ca55723eb84b71e66dd2caa29de27f0a (Flink Streaming Job).
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-6:3054 ] - [ INFO ]  Submitting job ca55723eb84b71e66dd2caa29de27f0a (Flink Streaming Job).
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-2:3055 ] - [ DEBUG ]  Registering task executor 479d4fbe-dd5f-4d12-ab9d-c27734122cce under f76f80a6e328135ca10906a06aaf3225 at the slot manager.
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-6:3087 ] - [ DEBUG ]  Start leadership runner for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:02  [ flink-akka.actor.default-dispatcher-6:3088 ] - [ INFO ]  Proposing leadership to contender LeaderContender: JobMasterServiceLeadershipRunner
+2026-02-24 10:21:02  [ mini-cluster-io-thread-12:3090 ] - [ DEBUG ]  Create new JobMasterServiceProcess because we were granted leadership under 491c922d-9360-41fa-8f9a-0732b3970f74.
+2026-02-24 10:21:02  [ ForkJoinPool.commonPool-worker-4:3094 ] - [ DEBUG ]  Wait until job initialization is finished
+2026-02-24 10:21:02  [ flink-akka.actor.supervisor-dispatcher-5:3109 ] - [ DEBUG ]  Starting FencedAkkaRpcActor with name jobmanager_3.
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3110 ] - [ INFO ]  Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_3 .
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3134 ] - [ INFO ]  Initializing job Flink Streaming Job (ca55723eb84b71e66dd2caa29de27f0a).
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3183 ] - [ INFO ]  Using restart back off time strategy NoRestartBackoffTimeStrategy for Flink Streaming Job (ca55723eb84b71e66dd2caa29de27f0a).
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3272 ] - [ INFO ]  Running initialization on master for job Flink Streaming Job (ca55723eb84b71e66dd2caa29de27f0a).
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3273 ] - [ INFO ]  Successfully ran initialization on master in 0 ms.
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3273 ] - [ DEBUG ]  Adding 2 vertices from job graph Flink Streaming Job (ca55723eb84b71e66dd2caa29de27f0a).
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3273 ] - [ DEBUG ]  Attaching 2 topologically sorted vertices to existing job graph with 0 vertices and 0 intermediate results.
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3287 ] - [ DEBUG ]  Connecting ExecutionJobVertex cbc357ccb763df2852fee8c4fc7d55f2 (Source: Collection Source -> Sink: Print to Std. Out) to 0 predecessors.
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3288 ] - [ DEBUG ]  Connecting ExecutionJobVertex 6cdc5bb954874d922eaee11a8e7b5dd5 (Source: Collection Source -> Sink: Print to Std. Out) to 0 predecessors.
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3306 ] - [ INFO ]  Built 2 pipelined regions in 5 ms
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3310 ] - [ DEBUG ]  Successfully created execution graph from job graph Flink Streaming Job (ca55723eb84b71e66dd2caa29de27f0a).
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3330 ] - [ INFO ]  No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@130d6a99
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3332 ] - [ DEBUG ]  The configuration state.checkpoint-storage has not be set in the current sessions flink-conf.yaml. Falling back to a default CheckpointStorage type. Users are strongly encouraged explicitly set this configuration so they understand how their applications are checkpointing snapshots for fault-tolerance.
+2026-02-24 10:21:02  [ jobmanager-future-thread-1:3333 ] - [ INFO ]  Checkpoint storage is set to 'jobmanager'
+2026-02-24 10:21:03  [ jobmanager-future-thread-1:3376 ] - [ DEBUG ]  Status of the shared state registry of job ca55723eb84b71e66dd2caa29de27f0a after restore: SharedStateRegistry{registeredStates={}}.
+2026-02-24 10:21:03  [ jobmanager-future-thread-1:3376 ] - [ INFO ]  No checkpoint found during restore.
+2026-02-24 10:21:03  [ jobmanager-future-thread-1:3377 ] - [ DEBUG ]  Resetting the master hooks.
+2026-02-24 10:21:03  [ jobmanager-future-thread-1:3392 ] - [ INFO ]  Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@77c4ee0 for Flink Streaming Job (ca55723eb84b71e66dd2caa29de27f0a).
+2026-02-24 10:21:03  [ jobmanager-future-thread-1:3405 ] - [ DEBUG ]  Successfully created the JobMasterService for job ca55723eb84b71e66dd2caa29de27f0a under leader id 491c922d-9360-41fa-8f9a-0732b3970f74.
+2026-02-24 10:21:03  [ jobmanager-future-thread-1:3405 ] - [ DEBUG ]  Confirm leadership 491c922d-9360-41fa-8f9a-0732b3970f74.
+2026-02-24 10:21:03  [ jobmanager-future-thread-1:3406 ] - [ INFO ]  Received confirmation of leadership for leader akka://flink/user/rpc/jobmanager_3 , session=491c922d-9360-41fa-8f9a-0732b3970f74
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3414 ] - [ INFO ]  Starting execution of job Flink Streaming Job (ca55723eb84b71e66dd2caa29de27f0a) under job master id 8f9a0732b3970f74491c922d936041fa.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3415 ] - [ INFO ]  Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3416 ] - [ INFO ]  Job Flink Streaming Job (ca55723eb84b71e66dd2caa29de27f0a) switched from state CREATED to RUNNING.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3430 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1) (d9beaea37727c284c6695009a9c82d74) switched from CREATED to SCHEDULED.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3442 ] - [ DEBUG ]  Received slot request [SlotRequestId{da99052ff3a117e7061244b0de608b06}] with resource requirements: ResourceProfile{UNKNOWN}
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3447 ] - [ DEBUG ]  Request new allocated slot with slot request id SlotRequestId{da99052ff3a117e7061244b0de608b06} and resource profile ResourceProfile{UNKNOWN}
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3449 ] - [ DEBUG ]  Declare new resource requirements for job ca55723eb84b71e66dd2caa29de27f0a.
+	required resources: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+	acquired resources: ResourceCounter{resources={}}
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3452 ] - [ DEBUG ]  Request a logical slot (SlotRequestId{1f65b2eb0b5489b9268c4bd60fdbdd44}) for execution vertex (id cbc357ccb763df2852fee8c4fc7d55f2_0) from the physical slot (SlotRequestId{da99052ff3a117e7061244b0de608b06})
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3461 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1) (2bc82ed5afa9a633044232d8665268fa) switched from CREATED to SCHEDULED.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3462 ] - [ DEBUG ]  Request a logical slot (SlotRequestId{8b59903de62f6584dd5f2b5141fcd421}) for execution vertex (id 6cdc5bb954874d922eaee11a8e7b5dd5_0) from the physical slot (SlotRequestId{da99052ff3a117e7061244b0de608b06})
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3463 ] - [ DEBUG ]  Trigger heartbeat request.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3464 ] - [ INFO ]  Connecting to ResourceManager akka://flink/user/rpc/resourcemanager_1(ac223ae3f8c824265bf2397bb7c3404d)
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3466 ] - [ DEBUG ]  Try to connect to remote RPC endpoint with address akka://flink/user/rpc/resourcemanager_1. Returning a org.apache.flink.runtime.resourcemanager.ResourceManagerGateway gateway.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3467 ] - [ INFO ]  Resolved ResourceManager address, beginning registration
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3467 ] - [ DEBUG ]  Registration at ResourceManager attempt 1 (timeout=100ms)
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3468 ] - [ DEBUG ]  Add job ca55723eb84b71e66dd2caa29de27f0a to job leader id monitoring.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3470 ] - [ INFO ]  Registering job manager 8f9a0732b3970f74491c922d936041fa@akka://flink/user/rpc/jobmanager_3 for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ mini-cluster-io-thread-15:3470 ] - [ DEBUG ]  Job ca55723eb84b71e66dd2caa29de27f0a has a new job leader 491c922d-9360-41fa-8f9a-0732b3970f74@akka://flink/user/rpc/jobmanager_3.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3471 ] - [ DEBUG ]  Try to connect to remote RPC endpoint with address akka://flink/user/rpc/jobmanager_3. Returning a org.apache.flink.runtime.jobmaster.JobMasterGateway gateway.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3483 ] - [ INFO ]  Registered job manager 8f9a0732b3970f74491c922d936041fa@akka://flink/user/rpc/jobmanager_3 for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3484 ] - [ DEBUG ]  Registration with ResourceManager at akka://flink/user/rpc/resourcemanager_1 was successful.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3485 ] - [ INFO ]  JobManager successfully registered at ResourceManager, leader id: ac223ae3f8c824265bf2397bb7c3404d.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3487 ] - [ INFO ]  Received resource requirements from job ca55723eb84b71e66dd2caa29de27f0a: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3489 ] - [ DEBUG ]  Initiating tracking of resources for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3493 ] - [ DEBUG ]  Starting allocation of slot 479d4fbe-dd5f-4d12-ab9d-c27734122cce_0 for job ca55723eb84b71e66dd2caa29de27f0a with resource profile ResourceProfile{UNKNOWN}.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3496 ] - [ INFO ]  Receive slot request 043f9604eef93fb7e5d0ff35d76b2fc5 for job ca55723eb84b71e66dd2caa29de27f0a from resource manager with leader id ac223ae3f8c824265bf2397bb7c3404d.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3504 ] - [ DEBUG ]  Initialized MemoryManager with total memory size 134217728 and page size 32768.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3505 ] - [ INFO ]  Allocated slot for 043f9604eef93fb7e5d0ff35d76b2fc5.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3506 ] - [ INFO ]  Add job ca55723eb84b71e66dd2caa29de27f0a for job leader monitoring.
+2026-02-24 10:21:03  [ mini-cluster-io-thread-17:3511 ] - [ DEBUG ]  New leader information for job ca55723eb84b71e66dd2caa29de27f0a. Address: akka://flink/user/rpc/jobmanager_3, leader id: 8f9a0732b3970f74491c922d936041fa.
+2026-02-24 10:21:03  [ mini-cluster-io-thread-17:3519 ] - [ INFO ]  Try to register at job manager akka://flink/user/rpc/jobmanager_3 with leader id 491c922d-9360-41fa-8f9a-0732b3970f74.
+2026-02-24 10:21:03  [ mini-cluster-io-thread-17:3519 ] - [ DEBUG ]  Try to connect to remote RPC endpoint with address akka://flink/user/rpc/jobmanager_3. Returning a org.apache.flink.runtime.jobmaster.JobMasterGateway gateway.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3521 ] - [ INFO ]  Resolved JobManager address, beginning registration
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3522 ] - [ DEBUG ]  Registration at JobManager attempt 1 (timeout=100ms)
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3526 ] - [ DEBUG ]  Try to connect to remote RPC endpoint with address akka://flink/user/rpc/taskmanager_0. Returning a org.apache.flink.runtime.taskexecutor.TaskExecutorGateway gateway.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3532 ] - [ DEBUG ]  Register new TaskExecutor 479d4fbe-dd5f-4d12-ab9d-c27734122cce.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3533 ] - [ DEBUG ]  Registration with JobManager at akka://flink/user/rpc/jobmanager_3 was successful.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3534 ] - [ INFO ]  Successful registration at job manager akka://flink/user/rpc/jobmanager_3 for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3535 ] - [ INFO ]  Establish JobManager connection for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3540 ] - [ INFO ]  Offer reserved slots to the leader of job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3544 ] - [ DEBUG ]  Received 1 slot offers from TaskExecutor 479d4fbe-dd5f-4d12-ab9d-c27734122cce @ localhost (dataPort=-1).
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3547 ] - [ DEBUG ]  Matched slot offer 043f9604eef93fb7e5d0ff35d76b2fc5 to requirement ResourceProfile{UNKNOWN}.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3549 ] - [ DEBUG ]  Acquired new resources; new total acquired resources: ResourceCounter{resources={ResourceProfile{UNKNOWN}=1}}
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3549 ] - [ DEBUG ]  Matched slot AllocatedSlot 043f9604eef93fb7e5d0ff35d76b2fc5 @ 479d4fbe-dd5f-4d12-ab9d-c27734122cce @ localhost (dataPort=-1) - 0 to pending request PendingRequest{slotRequestId=SlotRequestId{da99052ff3a117e7061244b0de608b06}, resourceProfile=ResourceProfile{UNKNOWN}, isBatchRequest=false, unfulfillableSince=9223372036854775807}.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3550 ] - [ DEBUG ]  Reserve slot 043f9604eef93fb7e5d0ff35d76b2fc5 for slot request id SlotRequestId{da99052ff3a117e7061244b0de608b06}
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3550 ] - [ DEBUG ]  Reserve free slot with allocation id 043f9604eef93fb7e5d0ff35d76b2fc5.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3551 ] - [ DEBUG ]  Allocated logical slot (SlotRequestId{1f65b2eb0b5489b9268c4bd60fdbdd44}) for execution vertex (id cbc357ccb763df2852fee8c4fc7d55f2_0) from the physical slot (SlotRequestId{da99052ff3a117e7061244b0de608b06})
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3563 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1) (d9beaea37727c284c6695009a9c82d74) switched from SCHEDULED to DEPLOYING.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3564 ] - [ INFO ]  Deploying Source: Collection Source -> Sink: Print to Std. Out (1/1) (attempt #0) with attempt id d9beaea37727c284c6695009a9c82d74 to 479d4fbe-dd5f-4d12-ab9d-c27734122cce @ localhost (dataPort=-1) with allocation id 043f9604eef93fb7e5d0ff35d76b2fc5
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3572 ] - [ DEBUG ]  Allocated logical slot (SlotRequestId{8b59903de62f6584dd5f2b5141fcd421}) for execution vertex (id 6cdc5bb954874d922eaee11a8e7b5dd5_0) from the physical slot (SlotRequestId{da99052ff3a117e7061244b0de608b06})
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3573 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1) (2bc82ed5afa9a633044232d8665268fa) switched from SCHEDULED to DEPLOYING.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3573 ] - [ INFO ]  Deploying Source: Collection Source -> Sink: Print to Std. Out (1/1) (attempt #0) with attempt id 2bc82ed5afa9a633044232d8665268fa to 479d4fbe-dd5f-4d12-ab9d-c27734122cce @ localhost (dataPort=-1) with allocation id 043f9604eef93fb7e5d0ff35d76b2fc5
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3573 ] - [ INFO ]  Activate slot 043f9604eef93fb7e5d0ff35d76b2fc5.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3589 ] - [ DEBUG ]  Registered new allocation id 043f9604eef93fb7e5d0ff35d76b2fc5 for local state stores for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3596 ] - [ DEBUG ]  Registered new local state store with configuration LocalRecoveryConfig{localRecoveryMode=false, localStateDirectories=LocalRecoveryDirectoryProvider{rootDirectories=[/var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T/localState/aid_043f9604eef93fb7e5d0ff35d76b2fc5], jobID=ca55723eb84b71e66dd2caa29de27f0a, jobVertexID=cbc357ccb763df2852fee8c4fc7d55f2, subtaskIndex=0}} for ca55723eb84b71e66dd2caa29de27f0a - cbc357ccb763df2852fee8c4fc7d55f2 - 0 under allocation id 043f9604eef93fb7e5d0ff35d76b2fc5.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3621 ] - [ INFO ]  Received task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (d9beaea37727c284c6695009a9c82d74), deploy into slot with allocation id 043f9604eef93fb7e5d0ff35d76b2fc5.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3625 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (d9beaea37727c284c6695009a9c82d74) switched from CREATED to DEPLOYING.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3625 ] - [ DEBUG ]  Creating FileSystem stream leak safety net for task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (d9beaea37727c284c6695009a9c82d74) [DEPLOYING]
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3629 ] - [ INFO ]  Activate slot 043f9604eef93fb7e5d0ff35d76b2fc5.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3629 ] - [ INFO ]  Activate slot 043f9604eef93fb7e5d0ff35d76b2fc5.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3633 ] - [ INFO ]  Loading JAR files for task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (d9beaea37727c284c6695009a9c82d74) [DEPLOYING].
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3633 ] - [ DEBUG ]  Getting user code class loader for task d9beaea37727c284c6695009a9c82d74 at library cache manager took 0 milliseconds
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3634 ] - [ DEBUG ]  Registered new local state store with configuration LocalRecoveryConfig{localRecoveryMode=false, localStateDirectories=LocalRecoveryDirectoryProvider{rootDirectories=[/var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T/localState/aid_043f9604eef93fb7e5d0ff35d76b2fc5], jobID=ca55723eb84b71e66dd2caa29de27f0a, jobVertexID=6cdc5bb954874d922eaee11a8e7b5dd5, subtaskIndex=0}} for ca55723eb84b71e66dd2caa29de27f0a - 6cdc5bb954874d922eaee11a8e7b5dd5 - 0 under allocation id 043f9604eef93fb7e5d0ff35d76b2fc5.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3635 ] - [ INFO ]  Received task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (2bc82ed5afa9a633044232d8665268fa), deploy into slot with allocation id 043f9604eef93fb7e5d0ff35d76b2fc5.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3636 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (2bc82ed5afa9a633044232d8665268fa) switched from CREATED to DEPLOYING.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3636 ] - [ DEBUG ]  Registering task at network: Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (d9beaea37727c284c6695009a9c82d74) [DEPLOYING].
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3636 ] - [ DEBUG ]  Creating FileSystem stream leak safety net for task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (2bc82ed5afa9a633044232d8665268fa) [DEPLOYING]
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3636 ] - [ INFO ]  Loading JAR files for task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (2bc82ed5afa9a633044232d8665268fa) [DEPLOYING].
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3637 ] - [ DEBUG ]  Getting user code class loader for task 2bc82ed5afa9a633044232d8665268fa at library cache manager took 1 milliseconds
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3638 ] - [ DEBUG ]  Registering task at network: Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (2bc82ed5afa9a633044232d8665268fa) [DEPLOYING].
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3660 ] - [ INFO ]  No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@4d8d12dc
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3661 ] - [ INFO ]  No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@60281c20
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3661 ] - [ DEBUG ]  The configuration state.checkpoint-storage has not be set in the current sessions flink-conf.yaml. Falling back to a default CheckpointStorage type. Users are strongly encouraged explicitly set this configuration so they understand how their applications are checkpointing snapshots for fault-tolerance.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3661 ] - [ INFO ]  Checkpoint storage is set to 'jobmanager'
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3661 ] - [ DEBUG ]  The configuration state.checkpoint-storage has not be set in the current sessions flink-conf.yaml. Falling back to a default CheckpointStorage type. Users are strongly encouraged explicitly set this configuration so they understand how their applications are checkpointing snapshots for fault-tolerance.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3661 ] - [ INFO ]  Checkpoint storage is set to 'jobmanager'
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3671 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (d9beaea37727c284c6695009a9c82d74) switched from DEPLOYING to INITIALIZING.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3671 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (2bc82ed5afa9a633044232d8665268fa) switched from DEPLOYING to INITIALIZING.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3672 ] - [ DEBUG ]  Initializing Source: Collection Source -> Sink: Print to Std. Out (1/1)#0.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3672 ] - [ DEBUG ]  Initializing Source: Collection Source -> Sink: Print to Std. Out (1/1)#0.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3672 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1) (d9beaea37727c284c6695009a9c82d74) switched from DEPLOYING to INITIALIZING.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3674 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1) (2bc82ed5afa9a633044232d8665268fa) switched from DEPLOYING to INITIALIZING.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3705 ] - [ DEBUG ]  Invoking Source: Collection Source -> Sink: Print to Std. Out (1/1)#0
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3705 ] - [ DEBUG ]  Invoking Source: Collection Source -> Sink: Print to Std. Out (1/1)#0
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3739 ] - [ DEBUG ]  Creating operator state backend for StreamSink_2be4fe38b4ce63aa5bffc06b65e24e03_(1/1) with empty state.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3739 ] - [ DEBUG ]  Creating operator state backend for StreamSink_eb99017e0f9125fa6648bf56123bdcf7_(1/1) with empty state.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3772 ] - [ DEBUG ]  Creating operator state backend for StreamSource_cbc357ccb763df2852fee8c4fc7d55f2_(1/1) with empty state.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3772 ] - [ DEBUG ]  Creating operator state backend for StreamSource_6cdc5bb954874d922eaee11a8e7b5dd5_(1/1) with empty state.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3796 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (d9beaea37727c284c6695009a9c82d74) switched from INITIALIZING to RUNNING.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3796 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (2bc82ed5afa9a633044232d8665268fa) switched from INITIALIZING to RUNNING.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3797 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1) (d9beaea37727c284c6695009a9c82d74) switched from INITIALIZING to RUNNING.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3798 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1) (2bc82ed5afa9a633044232d8665268fa) switched from INITIALIZING to RUNNING.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3810 ] - [ DEBUG ]  Finished task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3810 ] - [ DEBUG ]  Finished task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3814 ] - [ DEBUG ]  Closed operators for task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3814 ] - [ DEBUG ]  Closed operators for task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3823 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (2bc82ed5afa9a633044232d8665268fa) switched from RUNNING to FINISHED.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3823 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (d9beaea37727c284c6695009a9c82d74) switched from RUNNING to FINISHED.
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3824 ] - [ INFO ]  Freeing task resources for Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (2bc82ed5afa9a633044232d8665268fa).
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3824 ] - [ INFO ]  Freeing task resources for Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (d9beaea37727c284c6695009a9c82d74).
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3826 ] - [ DEBUG ]  Release task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 network resources (state: FINISHED).
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3826 ] - [ DEBUG ]  Release task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 network resources (state: FINISHED).
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3829 ] - [ DEBUG ]  Ensuring all FileSystem streams are closed for task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (d9beaea37727c284c6695009a9c82d74) [FINISHED]
+2026-02-24 10:21:03  [ Source: Collection Source -> Sink: Print to Std. Out (1/1)#0:3829 ] - [ DEBUG ]  Ensuring all FileSystem streams are closed for task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 (2bc82ed5afa9a633044232d8665268fa) [FINISHED]
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3830 ] - [ INFO ]  Un-registering task and sending final execution state FINISHED to JobManager for task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 2bc82ed5afa9a633044232d8665268fa.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3839 ] - [ INFO ]  Un-registering task and sending final execution state FINISHED to JobManager for task Source: Collection Source -> Sink: Print to Std. Out (1/1)#0 d9beaea37727c284c6695009a9c82d74.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3841 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1) (2bc82ed5afa9a633044232d8665268fa) switched from RUNNING to FINISHED.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3843 ] - [ DEBUG ]  Ignoring transition of vertex Source: Collection Source -> Sink: Print to Std. Out (1/1) - execution #0 to FAILED while being FINISHED.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3844 ] - [ DEBUG ]  Remove logical slot (SlotRequestId{8b59903de62f6584dd5f2b5141fcd421}) for execution vertex (id 6cdc5bb954874d922eaee11a8e7b5dd5_0) from the physical slot (SlotRequestId{da99052ff3a117e7061244b0de608b06})
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3854 ] - [ INFO ]  Source: Collection Source -> Sink: Print to Std. Out (1/1) (d9beaea37727c284c6695009a9c82d74) switched from RUNNING to FINISHED.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3854 ] - [ DEBUG ]  Ignoring transition of vertex Source: Collection Source -> Sink: Print to Std. Out (1/1) - execution #0 to FAILED while being FINISHED.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3855 ] - [ DEBUG ]  Remove logical slot (SlotRequestId{1f65b2eb0b5489b9268c4bd60fdbdd44}) for execution vertex (id cbc357ccb763df2852fee8c4fc7d55f2_0) from the physical slot (SlotRequestId{da99052ff3a117e7061244b0de608b06})
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3855 ] - [ DEBUG ]  Release shared slot externally (SlotRequestId{da99052ff3a117e7061244b0de608b06})
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3855 ] - [ DEBUG ]  Release slot with slot request id SlotRequestId{da99052ff3a117e7061244b0de608b06}
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3855 ] - [ DEBUG ]  Free reserved slot 043f9604eef93fb7e5d0ff35d76b2fc5.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3857 ] - [ DEBUG ]  Release shared slot (SlotRequestId{da99052ff3a117e7061244b0de608b06})
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3858 ] - [ DEBUG ]  Could not match slot AllocatedSlot 043f9604eef93fb7e5d0ff35d76b2fc5 @ 479d4fbe-dd5f-4d12-ab9d-c27734122cce @ localhost (dataPort=-1) - 0 to any pending request.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3860 ] - [ DEBUG ]  Declare new resource requirements for job ca55723eb84b71e66dd2caa29de27f0a.
+	required resources: []
+	acquired resources: ResourceCounter{resources={ResourceProfile{UNKNOWN}=1}}
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3861 ] - [ INFO ]  Job Flink Streaming Job (ca55723eb84b71e66dd2caa29de27f0a) switched from state RUNNING to FINISHED.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3861 ] - [ INFO ]  Clearing resource requirements of job ca55723eb84b71e66dd2caa29de27f0a
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3862 ] - [ DEBUG ]  ExecutionGraph ca55723eb84b71e66dd2caa29de27f0a reached terminal state FINISHED.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3862 ] - [ INFO ]  Stopping checkpoint coordinator for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3868 ] - [ DEBUG ]  Detected excess resources for job ca55723eb84b71e66dd2caa29de27f0a: [ExcessResource{numExcessResources=1, requirementProfile=ResourceProfile{UNKNOWN}, resourceProfile=ResourceProfile{taskHeapMemory=1024.000gb (1099511627776 bytes), taskOffHeapMemory=1024.000gb (1099511627776 bytes), managedMemory=128.000mb (134217728 bytes), networkMemory=64.000mb (67108864 bytes)}}]
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3870 ] - [ INFO ]  Shutting down
+2026-02-24 10:21:03  [ jobmanager-future-thread-3:3880 ] - [ DEBUG ]  Job ca55723eb84b71e66dd2caa29de27f0a under leader id 491c922d-9360-41fa-8f9a-0732b3970f74 reached a globally terminal state FINISHED.
+2026-02-24 10:21:03  [ jobmanager-future-thread-3:3881 ] - [ DEBUG ]  Completing the result for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3884 ] - [ INFO ]  Shutting down Flink Mini Cluster
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3884 ] - [ INFO ]  Job ca55723eb84b71e66dd2caa29de27f0a reached terminal state FINISHED.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3885 ] - [ INFO ]  Stopping TaskExecutor akka://flink/user/rpc/taskmanager_0.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3886 ] - [ INFO ]  Shutting down rest endpoint.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3886 ] - [ DEBUG ]  Terminating the leadership runner for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3886 ] - [ DEBUG ]  Close ResourceManager connection 5e08541d25a2828469ce188697f3b9c0.
+org.apache.flink.util.FlinkException: The TaskExecutor is shutting down.
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.onStop(TaskExecutor.java:438)
+	at org.apache.flink.runtime.rpc.RpcEndpoint.internalCallOnStop(RpcEndpoint.java:214)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor$StartedState.terminate(AkkaRpcActor.java:563)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleControlMessage(AkkaRpcActor.java:186)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:26)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:21)
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123)
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122)
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:21)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:225)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:592)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:561)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3886 ] - [ DEBUG ]  Terminating the JobMasterService process for job ca55723eb84b71e66dd2caa29de27f0a under leader id 491c922d-9360-41fa-8f9a-0732b3970f74.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3890 ] - [ INFO ]  Closing TaskExecutor connection 479d4fbe-dd5f-4d12-ab9d-c27734122cce because: The TaskExecutor is shutting down.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3890 ] - [ DEBUG ]  Unregistering task executor f76f80a6e328135ca10906a06aaf3225 from the slot manager.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3891 ] - [ DEBUG ]  Stopping tracking of resources for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3891 ] - [ DEBUG ]  Processing shutdown of task executor 479d4fbe-dd5f-4d12-ab9d-c27734122cce.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3892 ] - [ DEBUG ]  Close JobManager connection for job ca55723eb84b71e66dd2caa29de27f0a.
+org.apache.flink.util.FlinkException: The TaskExecutor is shutting down.
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.onStop(TaskExecutor.java:438)
+	at org.apache.flink.runtime.rpc.RpcEndpoint.internalCallOnStop(RpcEndpoint.java:214)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor$StartedState.terminate(AkkaRpcActor.java:563)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleControlMessage(AkkaRpcActor.java:186)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:26)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:21)
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123)
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122)
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:21)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:225)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:592)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:561)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3896 ] - [ INFO ]  Stopping the JobMaster for job Flink Streaming Job(ca55723eb84b71e66dd2caa29de27f0a).
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3898 ] - [ DEBUG ]  Free slot TaskSlot(index:0, state:ALLOCATED, resource profile: ResourceProfile{taskHeapMemory=1024.000gb (1099511627776 bytes), taskOffHeapMemory=1024.000gb (1099511627776 bytes), managedMemory=128.000mb (134217728 bytes), networkMemory=64.000mb (67108864 bytes)}, allocationId: 043f9604eef93fb7e5d0ff35d76b2fc5, jobId: ca55723eb84b71e66dd2caa29de27f0a).
+org.apache.flink.util.FlinkException: Closing task slot table
+	at org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl.closeAsync(TaskSlotTableImpl.java:173)
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.onStop(TaskExecutor.java:455)
+	at org.apache.flink.runtime.rpc.RpcEndpoint.internalCallOnStop(RpcEndpoint.java:214)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor$StartedState.terminate(AkkaRpcActor.java:563)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleControlMessage(AkkaRpcActor.java:186)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:26)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:21)
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123)
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122)
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:21)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:225)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:592)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:561)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3902 ] - [ DEBUG ]  Disconnect TaskExecutor 479d4fbe-dd5f-4d12-ab9d-c27734122cce because: Stopping JobMaster for job Flink Streaming Job(ca55723eb84b71e66dd2caa29de27f0a).
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3903 ] - [ INFO ]  Releasing slot [043f9604eef93fb7e5d0ff35d76b2fc5].
+org.apache.flink.util.FlinkException: Stopping JobMaster for job Flink Streaming Job(ca55723eb84b71e66dd2caa29de27f0a).
+	at org.apache.flink.runtime.jobmaster.JobMaster.onStop(JobMaster.java:400)
+	at org.apache.flink.runtime.rpc.RpcEndpoint.internalCallOnStop(RpcEndpoint.java:214)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor$StartedState.terminate(AkkaRpcActor.java:563)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleControlMessage(AkkaRpcActor.java:186)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:26)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:21)
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123)
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122)
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:21)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:225)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:592)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:561)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3904 ] - [ DEBUG ]  Declare new resource requirements for job ca55723eb84b71e66dd2caa29de27f0a.
+	required resources: []
+	acquired resources: ResourceCounter{resources={}}
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3905 ] - [ INFO ]  Stop job leader service.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3905 ] - [ DEBUG ]  Close ResourceManager connection 5e08541d25a2828469ce188697f3b9c0.
+org.apache.flink.util.FlinkException: Stopping JobMaster for job Flink Streaming Job(ca55723eb84b71e66dd2caa29de27f0a).
+	at org.apache.flink.runtime.jobmaster.JobMaster.onStop(JobMaster.java:400)
+	at org.apache.flink.runtime.rpc.RpcEndpoint.internalCallOnStop(RpcEndpoint.java:214)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor$StartedState.terminate(AkkaRpcActor.java:563)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleControlMessage(AkkaRpcActor.java:186)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:26)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:21)
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123)
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122)
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:21)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:225)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:592)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:561)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3905 ] - [ INFO ]  Clearing resource requirements of job ca55723eb84b71e66dd2caa29de27f0a
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3906 ] - [ INFO ]  Shutting down TaskExecutorLocalStateStoresManager.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3906 ] - [ DEBUG ]  Initiating tracking of resources for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3907 ] - [ DEBUG ]  Stopping tracking of resources for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3908 ] - [ DEBUG ]  Remove job ca55723eb84b71e66dd2caa29de27f0a from job leader id monitoring.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3912 ] - [ INFO ]  Disconnect job manager 8f9a0732b3970f74491c922d936041fa@akka://flink/user/rpc/jobmanager_3 for job ca55723eb84b71e66dd2caa29de27f0a from the resource manager.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3913 ] - [ DEBUG ]  Initiating tracking of resources for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3913 ] - [ DEBUG ]  Stopping tracking of resources for job ca55723eb84b71e66dd2caa29de27f0a.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3915 ] - [ DEBUG ]  The RpcEndpoint jobmanager_3 terminated successfully.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3928 ] - [ DEBUG ]  Shutting down I/O manager.
+2026-02-24 10:21:03  [ ForkJoinPool.commonPool-worker-4:3929 ] - [ INFO ]  Removing cache directory /var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T/flink-web-ui
+2026-02-24 10:21:03  [ ForkJoinPool.commonPool-worker-4:3934 ] - [ INFO ]  Shut down complete.
+2026-02-24 10:21:03  [ flink-akka.actor.supervisor-dispatcher-5:3934 ] - [ DEBUG ]  AkkaRpcActor akka://flink/user/rpc/jobmanager_3 has terminated.
+2026-02-24 10:21:03  [ AkkaRpcService-Supervisor-Termination-Future-Executor-thread-1:3935 ] - [ DEBUG ]  Leadership runner for job ca55723eb84b71e66dd2caa29de27f0a has been terminated.
+2026-02-24 10:21:03  [ AkkaRpcService-Supervisor-Termination-Future-Executor-thread-1:3936 ] - [ DEBUG ]  JobMasterService process for job ca55723eb84b71e66dd2caa29de27f0a under leader id 491c922d-9360-41fa-8f9a-0732b3970f74 has been terminated.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3936 ] - [ INFO ]  FileChannelManager removed spill file directory /var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T/flink-io-eeb258f1-eec0-4979-90c3-e6344903a731
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3937 ] - [ INFO ]  Shutting down the network environment and its components.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3939 ] - [ DEBUG ]  Shutting down network connection manager
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3940 ] - [ DEBUG ]  Shutting down intermediate result partition manager
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3940 ] - [ INFO ]  Shut down cluster because application is in CANCELED, diagnostics DispatcherResourceManagerComponent has been closed..
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3941 ] - [ DEBUG ]  Releasing 0 partitions because of shutdown.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3941 ] - [ DEBUG ]  Successful shutdown.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3941 ] - [ INFO ]  Closing components.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-3:3943 ] - [ INFO ]  Stopping SessionDispatcherLeaderProcess.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3944 ] - [ INFO ]  Stopping dispatcher akka://flink/user/rpc/dispatcher_2.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3944 ] - [ INFO ]  Stopping all currently running jobs of dispatcher akka://flink/user/rpc/dispatcher_2.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3944 ] - [ INFO ]  Closing the slot manager.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3945 ] - [ INFO ]  Suspending the slot manager.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3945 ] - [ INFO ]  Stopped dispatcher akka://flink/user/rpc/dispatcher_2.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:3946 ] - [ DEBUG ]  The RpcEndpoint resourcemanager_1 terminated successfully.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-6:3946 ] - [ DEBUG ]  The RpcEndpoint dispatcher_2 terminated successfully.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3946 ] - [ INFO ]  FileChannelManager removed spill file directory /var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T/flink-netty-shuffle-971a93a3-b72d-448d-b5f4-f5dade204058
+2026-02-24 10:21:03  [ flink-akka.actor.supervisor-dispatcher-5:3946 ] - [ DEBUG ]  AkkaRpcActor akka://flink/user/rpc/resourcemanager_1 has terminated.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3947 ] - [ INFO ]  Shutting down the kvState service and its components.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3947 ] - [ INFO ]  Stop job leader service.
+2026-02-24 10:21:03  [ flink-akka.actor.supervisor-dispatcher-5:3947 ] - [ DEBUG ]  AkkaRpcActor akka://flink/user/rpc/dispatcher_2 has terminated.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3950 ] - [ INFO ]  removed file cache directory /var/folders/g0/n553qn8s1qg24j07zzp46rcr0000gn/T/flink-dist-cache-f4d9e411-33a4-43a8-b289-f75c69627606
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3951 ] - [ INFO ]  Stopped TaskExecutor akka://flink/user/rpc/taskmanager_0.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:3952 ] - [ DEBUG ]  The RpcEndpoint taskmanager_0 terminated successfully.
+2026-02-24 10:21:03  [ flink-akka.actor.supervisor-dispatcher-5:3952 ] - [ DEBUG ]  AkkaRpcActor akka://flink/user/rpc/taskmanager_0 has terminated.
+2026-02-24 10:21:03  [ AkkaRpcService-Supervisor-Termination-Future-Executor-thread-1:3953 ] - [ INFO ]  Stopping Akka RPC service.
+2026-02-24 10:21:03  [ flink-metrics-2:3954 ] - [ DEBUG ]  The RpcEndpoint MetricQueryService terminated successfully.
+2026-02-24 10:21:03  [ flink-metrics-akka.actor.supervisor-dispatcher-3:3954 ] - [ DEBUG ]  AkkaRpcActor akka://flink-metrics/user/rpc/MetricQueryService has terminated.
+2026-02-24 10:21:03  [ flink-metrics-akka.actor.supervisor-dispatcher-3:3969 ] - [ DEBUG ]  Stopping supervisor actor.
+2026-02-24 10:21:03  [ flink-metrics-2:4019 ] - [ INFO ]  Stopping Akka RPC service.
+2026-02-24 10:21:03  [ flink-metrics-2:4020 ] - [ INFO ]  Stopped Akka RPC service.
+2026-02-24 10:21:03  [ flink-akka.actor.supervisor-dispatcher-5:4021 ] - [ DEBUG ]  Stopping supervisor actor.
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-4:4023 ] - [ DEBUG ]  shutting down: StandardOutLogger
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:4042 ] - [ DEBUG ]  Releasing slot [043f9604eef93fb7e5d0ff35d76b2fc5] of registered TaskExecutor 479d4fbe-dd5f-4d12-ab9d-c27734122cce failed. Discarding slot.
+java.util.concurrent.TimeoutException: Invocation of public abstract java.util.concurrent.CompletableFuture org.apache.flink.runtime.taskexecutor.TaskExecutorGateway.freeSlot(org.apache.flink.runtime.clusterframework.types.AllocationID,java.lang.Throwable,org.apache.flink.api.common.time.Time) timed out.
+	at org.apache.flink.runtime.jobmaster.RpcTaskManagerGateway.freeSlot(RpcTaskManagerGateway.java:108)
+	at org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool.releaseSlots(DefaultDeclarativeSlotPool.java:452)
+	at org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool.releaseSlots(DefaultDeclarativeSlotPool.java:362)
+	at org.apache.flink.runtime.jobmaster.slotpool.DeclarativeSlotPoolService.internalReleaseTaskManager(DeclarativeSlotPoolService.java:249)
+	at org.apache.flink.runtime.jobmaster.slotpool.DeclarativeSlotPoolService.releaseTaskManager(DeclarativeSlotPoolService.java:230)
+	at org.apache.flink.runtime.jobmaster.JobMaster.disconnectTaskManager(JobMaster.java:497)
+	at org.apache.flink.runtime.jobmaster.JobMaster.disconnectTaskManagerResourceManagerConnections(JobMaster.java:942)
+	at org.apache.flink.runtime.jobmaster.JobMaster.lambda$stopJobExecution$4(JobMaster.java:931)
+	at org.apache.flink.runtime.concurrent.FutureUtils.lambda$runAfterwardsAsync$18(FutureUtils.java:687)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:760)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:736)
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442)
+	at org.apache.flink.runtime.concurrent.DirectExecutorService.execute(DirectExecutorService.java:217)
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:751)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:736)
+	at java.util.concurrent.CompletableFuture.uniWhenCompleteStage(CompletableFuture.java:781)
+	at java.util.concurrent.CompletableFuture.whenCompleteAsync(CompletableFuture.java:2150)
+	at org.apache.flink.runtime.concurrent.FutureUtils.runAfterwardsAsync(FutureUtils.java:684)
+	at org.apache.flink.runtime.concurrent.FutureUtils.runAfterwards(FutureUtils.java:651)
+	at org.apache.flink.runtime.jobmaster.JobMaster.stopJobExecution(JobMaster.java:928)
+	at org.apache.flink.runtime.jobmaster.JobMaster.onStop(JobMaster.java:398)
+	at org.apache.flink.runtime.rpc.RpcEndpoint.internalCallOnStop(RpcEndpoint.java:214)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor$StartedState.terminate(AkkaRpcActor.java:563)
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleControlMessage(AkkaRpcActor.java:186)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:26)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:21)
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123)
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122)
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:21)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:225)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:592)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:561)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: akka.pattern.AskTimeoutException: Ask timed out on [Actor[akka://flink/user/rpc/taskmanager_0#1098757430]] after [10000 ms]. Message of type [org.apache.flink.runtime.rpc.messages.LocalRpcInvocation]. A typical reason for `AskTimeoutException` is that the recipient actor didn't send a reply.
+	at akka.pattern.PromiseActorRef$.$anonfun$defaultOnTimeout$1(AskSupport.scala:635)
+	at akka.pattern.PromiseActorRef$.$anonfun$apply$1(AskSupport.scala:650)
+	at akka.actor.Scheduler$$anon$4.run(Scheduler.scala:205)
+	at akka.actor.LightArrayRevolverScheduler$TaskHolder.run(LightArrayRevolverScheduler.scala:337)
+	at akka.actor.LightArrayRevolverScheduler.$anonfun$close$1(LightArrayRevolverScheduler.scala:141)
+	at akka.actor.LightArrayRevolverScheduler.$anonfun$close$1$adapted(LightArrayRevolverScheduler.scala:140)
+	at scala.collection.Iterator.foreach(Iterator.scala:937)
+	at scala.collection.Iterator.foreach$(Iterator.scala:937)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1425)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:70)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:69)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at akka.actor.LightArrayRevolverScheduler.close(LightArrayRevolverScheduler.scala:140)
+	at akka.actor.ActorSystemImpl.stopScheduler(ActorSystem.scala:937)
+	at akka.actor.ActorSystemImpl.$anonfun$_start$1(ActorSystem.scala:872)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at akka.actor.ActorSystemImpl$$anon$3.run(ActorSystem.scala:892)
+	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$addRec$1$1.applyOrElse(ActorSystem.scala:1068)
+	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$addRec$1$1.applyOrElse(ActorSystem.scala:1068)
+	at scala.concurrent.Future.$anonfun$andThen$1(Future.scala:532)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
+	... 4 more
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:4045 ] - [ INFO ]  Shutting down BLOB cache
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:4048 ] - [ INFO ]  Shutting down BLOB cache
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:4054 ] - [ INFO ]  Stopped BLOB server at 0.0.0.0:53872
+2026-02-24 10:21:03  [ flink-akka.actor.default-dispatcher-2:4055 ] - [ INFO ]  Stopped Akka RPC service.

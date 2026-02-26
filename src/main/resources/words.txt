@@ -1,0 +1,2 @@
+this is a file to test the flink read and process function
+you can write anything in this file

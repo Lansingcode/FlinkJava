@@ -1,6 +1,5 @@
-package com.xj.flink;
+package com.xj.flink.source;
 
-import com.xj.flink.source.Event;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 

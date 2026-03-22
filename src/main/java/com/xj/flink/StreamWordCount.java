@@ -24,6 +24,7 @@ public class StreamWordCount {
         //int port = parameterTool.getInt("port");
         //2,读取文件流
         //执行前先监听端口：nc -lk 7777
+        // windows: ncat -lk 7777
         DataStreamSource<String> lineDataStream = env.socketTextStream("127.0.0.1", 7777);
         //3.转换计算
         SingleOutputStreamOperator<Tuple2<String, Long>> wordAndOneTuple = lineDataStream.flatMap((String line, Collector<Tuple2<String, Long>> out) -> {

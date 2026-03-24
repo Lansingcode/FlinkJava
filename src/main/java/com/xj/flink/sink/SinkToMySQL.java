@@ -20,10 +20,11 @@ public class SinkToMySQL {
                 new Event("Bob", "./prod?id=130", 4000L)
         );
         Stream.addSink(JdbcSink.sink(
-                "INSERT INTO CLICKS(USER,URL) VALUES (? , ?)",
+                "INSERT INTO CLICKS(USER,URL,timestamp) VALUES (? , ?,?)",
                 ((statement,event) -> {
                     statement.setString(1,event.user);
                     statement.setString(2,event.url);
+                    statement.setLong(3, event.timestamp);
                 }),
                 new JdbcConnectionOptions.JdbcConnectionOptionsBuilder()
                         .withUrl("jdbc:mysql://localhost:3306/mydb")

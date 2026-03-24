@@ -16,3 +16,13 @@ CREATE TABLE IF NOT EXISTS user_aggr (
 mary,data,1000
 bob,data,2000
 ```
+
+CLICKS表结构
+```angular2html
+drop table if exists CLICKS;
+CREATE TABLE CLICKS(
+USER VARCHAR(100) NOT NULL
+,URL VARCHAR(100) NOT NULL
+,timestamp BIGINT DEFAULT NULL
+);
+```

@@ -13,7 +13,7 @@ public class BatchWordCount {
         //1.创建一个执行环境
         ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
         //2.从文件读取数据
-        DataSource<String> lineDataSource = env.readTextFile("C:\\Users\\jxudu\\IdeaProjects\\FlinkJava\\src\\main\\resources\\words.txt");
+        DataSource<String> lineDataSource = env.readTextFile("src/main/resources/words.txt");
         // 3.将每行数据进行分词，然后转换成二元组类型
         FlatMapOperator<String, Tuple2<String, Long>> wordAndOneTuple= lineDataSource.flatMap((String line, Collector<Tuple2<String, Long>> out) -> {
             //将一行文本进行分词

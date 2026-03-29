@@ -21,7 +21,8 @@ public class TwoStreamJoin {
         SingleOutputStreamOperator<Tuple3<String, String, Long>> stream1 = env.fromElements(
                 Tuple3.of("a", "stream-1", 1000L),
                 Tuple3.of("b", "stream-1", 2000L),
-                Tuple3.of("a", "stream-1", 3000L)
+                Tuple3.of("a", "stream-1", 3000L),
+                Tuple3.of("c", "stream-1", 4000L)
         ).assignTimestampsAndWatermarks(WatermarkStrategy.<Tuple3<String, String, Long>>forMonotonousTimestamps()
                 .withTimestampAssigner(new SerializableTimestampAssigner<Tuple3<String, String, Long>>() {
                     @Override

@@ -1,4 +1,4 @@
-package com.xj.flink;
+package com.xj.flink.trigger;
 
 import com.xj.flink.source.ClickSource;
 import com.xj.flink.source.Event;

@@ -43,31 +43,34 @@ public class TwoStreamJoin {
         //自定义列表状态进行全外连接
         stream1.keyBy(data -> data.f0)
                 .connect(stream2.keyBy(data -> data.f0))
-                .process(new CoProcessFunction<Tuple3<String, String, Long>, Tuple3<String, String, Long>, Object>() {
-                    //定义列表状态用于保存两条流中已经到达的所有数据
-                    private ListState<Tuple2<String,Long>> stream1ListState;
-                    private ListState<Tuple2<String,Long>> stream2ListState;
-                    @Override
-                    public void open(Configuration parameters) throws Exception {
-                        stream1ListState = getRuntimeContext().getListState(new ListStateDescriptor<Tuple2<String, Long>>("stream1-list", Types.TUPLE(Types.STRING,  Types.LONG)));
-                        stream2ListState = getRuntimeContext().getListState(new ListStateDescriptor<Tuple2<String, Long>>("stream2-list", Types.TUPLE(Types.STRING,  Types.LONG)));
-                    }
-                    @Override
-                    public void processElement1(Tuple3<String, String, Long> left, CoProcessFunction<Tuple3<String, String, Long>, Tuple3<String, String, Long>, Object>.Context ctx, Collector<Object> out) throws Exception {
-                        //获取另一条流中所有数据，配对输出
-                        for (Tuple2<String,Long> right:stream2ListState.get()){
-                            out.collect(left.f0 + " " + left.f2 + " --> " + right);
-                        }
-                        stream1ListState.add(Tuple2.of(left.f0,left.f2));
-                    }
-                    @Override
-                    public void processElement2(Tuple3<String, String, Long> right, CoProcessFunction<Tuple3<String, String, Long>, Tuple3<String, String, Long>, Object>.Context ctx, Collector<Object> out) throws Exception {
-                        for (Tuple2<String,Long> left:stream1ListState.get()){
-                            out.collect(left + " --> " + right.f0 + " " + right.f2);
-                        }
-                        stream2ListState.add(Tuple2.of(right.f0,right.f2));
-                    }
-                }).print();
+                .process(new MyCoProcessFunction())
+                .print();
         env.execute();
+    }
+
+    public static class MyCoProcessFunction extends CoProcessFunction<Tuple3<String, String, Long>, Tuple3<String, String, Long>, Object> {
+        //定义列表状态用于保存两条流中已经到达的所有数据
+        private ListState<Tuple2<String,Long>> stream1ListState;
+        private ListState<Tuple2<String,Long>> stream2ListState;
+        @Override
+        public void open(Configuration parameters) throws Exception {
+            stream1ListState = getRuntimeContext().getListState(new ListStateDescriptor<Tuple2<String, Long>>("stream1-list", Types.TUPLE(Types.STRING,  Types.LONG)));
+            stream2ListState = getRuntimeContext().getListState(new ListStateDescriptor<Tuple2<String, Long>>("stream2-list", Types.TUPLE(Types.STRING,  Types.LONG)));
+        }
+        @Override
+        public void processElement1(Tuple3<String, String, Long> left, CoProcessFunction<Tuple3<String, String, Long>, Tuple3<String, String, Long>, Object>.Context ctx, Collector<Object> out) throws Exception {
+            //获取另一条流中所有数据，配对输出
+            for (Tuple2<String,Long> right:stream2ListState.get()){
+                out.collect(left.f0 + " " + left.f2 + " --> " + right);
+            }
+            stream1ListState.add(Tuple2.of(left.f0,left.f2));
+        }
+        @Override
+        public void processElement2(Tuple3<String, String, Long> right, CoProcessFunction<Tuple3<String, String, Long>, Tuple3<String, String, Long>, Object>.Context ctx, Collector<Object> out) throws Exception {
+            for (Tuple2<String,Long> left:stream1ListState.get()){
+                out.collect(left + " --> " + right.f0 + " " + right.f2);
+            }
+            stream2ListState.add(Tuple2.of(right.f0,right.f2));
+        }
     }
 }

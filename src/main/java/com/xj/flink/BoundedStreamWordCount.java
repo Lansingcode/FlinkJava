@@ -12,7 +12,7 @@ public class BoundedStreamWordCount {
         //1.创建流式的执行环境
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         //2.读取文件
-        DataStreamSource<String> lineDataStreamSource = env.readTextFile("C:\\Users\\jxudu\\IdeaProjects\\FlinkJava\\src\\main\\resources\\words.txt");
+        DataStreamSource<String> lineDataStreamSource = env.readTextFile("src/main/resources/words.txt");
         //3.转换计算
         SingleOutputStreamOperator<Tuple2<String, Long>> wordAndOneTuple = lineDataStreamSource.flatMap((String line, Collector<Tuple2<String, Long>> out) -> {
             String[] words = line.split(" ");

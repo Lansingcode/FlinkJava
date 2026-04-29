@@ -17,6 +17,7 @@ public class CustomWatermarkTest {
         env.execute();
     }
     public static class CustomWatermarkStrategy implements
+
             WatermarkStrategy<Event> {
         @Override
         public TimestampAssigner<Event>

@@ -8,6 +8,11 @@ import org.apache.flink.api.java.operators.FlatMapOperator;
 import org.apache.flink.api.java.operators.UnsortedGrouping;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.util.Collector;
+
+/**
+ * 02、Flink WordCount 之 Java
+ * 基于DataSet API 批处理
+ */
 public class BatchWordCount {
     public static void main(String[] args) throws Exception{
         //1.创建一个执行环境

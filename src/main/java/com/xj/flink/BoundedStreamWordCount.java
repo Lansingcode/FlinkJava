@@ -7,6 +7,11 @@ import org.apache.flink.streaming.api.datastream.KeyedStream;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.util.Collector;
+
+/**
+ * 02、Flink WordCount 之 Java
+ * 基于DataStream API 进行批处理
+ */
 public class BoundedStreamWordCount {
     public static void main(String[] args) throws Exception {
         //1.创建流式的执行环境

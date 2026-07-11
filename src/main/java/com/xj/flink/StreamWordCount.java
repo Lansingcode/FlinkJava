@@ -10,7 +10,7 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.util.Collector;
 
 /**
- * @author benjamin_5
+ * 流式数据处理
  * @Description 监听7777端口的输入数据进行实时统计词频
  * @date 2024/9/24
  */
@@ -20,17 +20,21 @@ public class StreamWordCount {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         //从参数中提取主机名和端口号
         //ParameterTool parameterTool = ParameterTool.fromArgs(args);
-        // String host = parameterTool.get("host");
+        //String host = parameterTool.get("host");
         //int port = parameterTool.getInt("port");
+
         //2,读取文件流
         //执行前先监听端口：nc -lk 7777
-        // windows: ncat -lk 7777
-        DataStreamSource<String> lineDataStream = env.socketTextStream("127.0.0.1", 7777);
+        // windows安装Nmap，把路径加入环境变量: ncat -lk 7777
+        String host="127.0.0.1";
+        int port =7777;
+        DataStreamSource<String> lineDataStream = env.socketTextStream(host, port);
         //3.转换计算
-        SingleOutputStreamOperator<Tuple2<String, Long>> wordAndOneTuple = lineDataStream.flatMap((String line, Collector<Tuple2<String, Long>> out) -> {
-            String[] words = line.split(" ");
-            for (String word : words) {
-                out.collect(Tuple2.of(word, 1L));
+        SingleOutputStreamOperator<Tuple2<String, Long>> wordAndOneTuple = lineDataStream.flatMap(
+                (String line, Collector<Tuple2<String, Long>> out) -> {
+                    String[] words = line.split(" ");
+                    for (String word : words) {
+                        out.collect(Tuple2.of(word, 1L));
             }
         }).returns(Types.TUPLE(Types.STRING, Types.LONG));
         //4.分组操作

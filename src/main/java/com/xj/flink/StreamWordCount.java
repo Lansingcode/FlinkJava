@@ -26,7 +26,7 @@ public class StreamWordCount {
         //2,读取文件流
         //执行前先监听端口：nc -lk 7777
         // windows安装Nmap，把路径加入环境变量: ncat -lk 7777
-        String host="127.0.0.1";
+        String host="localhost";
         int port =7777;
         DataStreamSource<String> lineDataStream = env.socketTextStream(host, port);
         //3.转换计算
